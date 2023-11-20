@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT FIRST-PART</title>
+    <link rel="stylesheet" href="light.css" id="vf">
+</head>
+
+<body >
+    <P id="come">WELCOME BACK</P>
+    <button onclick="wel()">👆</button><br></br>
+
+    <button onclick="nh()">🚗</button>
+
+
+    <button onclick="lo()"> STOP </button>
+
+    <button onclick="cli()">CONTINUE</button>
+    <button onclick="print()">print</button>
+
+    <button onclick="bf()">CONTINUE</button>
+    <button onclick="dark()">dark mode</button>
+    <button onclick="light()">light</button>
+
+    <script>
+        function light(){
+            document.getElementById('vf').href='light.css'
+        }
+        function dark() {
+            document.getElementById('vf').href='dark.css'
+        }
+        function cli() {
+            let greeting = prompt('Welcome to our page, what your name?');
+            let agecollection = prompt(`How old are you ${greeting} ?`);
+            alert(`welcome to our website  @ ${greeting}, you are ${agecollection} years old so you are qualify to join us`);
+        }
+        function bf() {
+            let greeting = prompt('Welcome to our page, what your name?');
+            let agecollection = prompt(`How old are you ${greeting} ?`);
+            document.write(`welcome to our website  @ ${greeting}, you are ${agecollection} years old so you are qualify to join us`);
+        }
+
+    </script>
+
+    <script src="java.js"></script>
+</body>
+
+</html>

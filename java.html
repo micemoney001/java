@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="light.css" id="vf">
 </head>
 
-<body >
+<body>
+
+    <marquee behavior="" direction=""
+        style="color: blue; background-color: red; border-radius: 20px; font-size: 50px; font-weight: bolder; font-style: italic;">
+        THIS IS A JAVA-SCRIPT WORK IN CLASS</marquee>
+
     <P id="come">WELCOME BACK</P>
     <button onclick="wel()">👆</button><br></br>
 
@@ -24,12 +29,46 @@
     <button onclick="dark()">dark mode</button>
     <button onclick="light()">light</button>
 
+
+
+
+    <!-- VAR -->
     <script>
-        function light(){
-            document.getElementById('vf').href='light.css'
+        var mayor = 77;
+        var mayor = 80;
+
+        alert(mayor)
+    </script>
+
+
+    <!-- let -->
+    <script>
+        let emma = 'ex 350';
+
+        let names = 'Emmanuel';
+        let cars = 'lexus';
+
+        alert(names + " " + cars + " " + emma)
+    </script>
+
+
+    <!-- BASTIC -->
+    <script>
+        let mice=`mice money`;
+        let carbar=`lexus IS 350`;
+        let money=`5000000`;
+
+        alert(`${mice} bought a ${carbar} at ${money}`)
+    </script>
+
+
+
+    <script>
+        function light() {
+            document.getElementById('vf').href = 'light.css'
         }
         function dark() {
-            document.getElementById('vf').href='dark.css'
+            document.getElementById('vf').href = 'dark.css'
         }
         function cli() {
             let greeting = prompt('Welcome to our page, what your name?');

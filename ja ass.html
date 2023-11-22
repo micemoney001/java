@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <marquee behavior="" direction="right"
+        style="font-weight: bolder; font-style: oblique; font-size: 40px; color: red; background-color: blue; border-radius: 10px;">
+        JAVA-SCRIPT ASSINGMENT</marquee>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="ja ass.html">VAR, LET & CONST</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="quote.html">QUOTE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="histroy.html">HISTROY</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  HOME
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4" style="background-color: red;  color: white; font-weight: 400; font-size: 14px; font-style: normal;">
+                <p style="font-weight: bold;  color: white; background-color: green; padding: 20px; font-size: 40px;">*var</p>
+                (1.)It can be declared without initialization. <br>
+                (2.) It can be updated and re-declared into the scope. <br>
+                (3.)  is attached to window object. <br>
+                (4.)  Globally speed or function scoped attached to window object. <br>
+                (5.) Variable declaration: You can use "var" to declare and define a new variable. <br>
+                (6.) Function scope: Variables declared with "var" have function scope, <br> meaning they are accessible within the function they are <br> defined in <br>
+                 (7.) Reassignment: "var" allows you to reassign a value to a variable after it has been declared. <br>
+                 (8.) Loop counters: You can use "var" to declare loop counters, such as in a "for" loop. <br>
+                 (9.) Scoping within conditional statements: Variables declared with "var" inside <br> conditional statements (e.g., "if") are accessible <br> within the entire function. <br>
+                 (10) .Compatibility: "var" has been a part of JavaScript since the <br> beginning, so it is compatible with older versions <br> of the language. <br>
+
+            </div>
+            <div class="col-md-4" style="background-color: blue;  color: white; font-weight: 400; font-size: 14px; font-style: normal;">
+                <p style="font-weight: bold; background-color: yellow; padding: 20px; font-size: 40px;"">*let</p>
+                (1.)  It can be updated but cannot be re-declared into the scope. <br>
+                (2.)  It can be declared without initialization. <br>
+                (3.)  Not attached to window object <br>
+                (4.)  Globally scoped Or block scoped
+                (5.)  Block scope: Unlike "var," variables declared with <br> "let" have block scope, meaning they are only accessible within <br> the block they are defined in. <br>
+                (6.) Variable reassignment: Similar to "var," you can reassign a value to a variable declared with "let." <br>
+                (7.) Loop iterators: "let" is often used as loop counters, especially in "for" loops. <br>
+                (8.) reventing variable hoisting: Unlike "var," variables declared with <br> "let" are not hoisted to the top of their scope, ensuring <br> more predictable and readable code. <br>
+                (9.) Shadowing: Using "let" allows you to create a new variable <br> with the same name as an outer variable, effectively <br> shadowing it within the block scope. <br>
+                (10) . Compatibility: "let" was introduced in newer versions of <br> JavaScript (ECMAScript 6), making it more modern <br> and widely supported.
+             </div>
+            <div class="col-md-4" style="background-color: red;  color: white; font-weight: 400; font-size: 14px; font-style: normal;">
+                <p style="font-weight: bold; background-color:chartreuse; color: white; padding: 20px; font-size: 40px;">*const</p>
+                (1.)  It cannot be updated or re-declared into the scope. <br>
+                (2.)  It cannot be declared without initialization. <br>
+                (3.)  Attached to window object <br>
+                (4.)  Globally scoped Or block scoped. <br>
+                (5.) Immutable variables: With "const," you <br> can declare variables that cannot be reassigned <br> after their initial value is assigned. <br>
+                (6.) Safety in code: By using "const," you can ensure that <br> certain values remain constant throughout your <br> program, reducing the risk of accidental modifications. <br>
+                (7.) Code readability: When you see a variable <br> declared with "const," you immediately know that <br> its value won't change, making your code more <br> understandable. <br>
+                (8.)  Iterators in loops: Just like "let," "const" can be used as loop counters, letting you preserve the value without accidentally modifying it. <br>
+                (9.) Constants in math and formulas: "const" allows you to define and use mathematical constants, such as π, in your calculations, improving code readability. <br>
+                (10) .Safer object properties: When defining object properties with "const," you know that those properties won't be reassigned or changed unexpectedly. <br>
+
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

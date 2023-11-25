@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="birt()">ABOUT ME</button>
+    <script>
+        let day = new Date().getDay();
+        let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thusday', 'Friday', 'Saturday']
+
+        alert(`TODAY IS ${days[day]} `)
+        
+
+
+        function birt(){
+            let resturant = {
+                name: 'OMIDIRE OLUWAMAYOWA',
+                location: 'APETE',
+                menu: {
+                    completion: ['Eba', 'fufu', 'black'],
+                    height: ['egusi', 'tall', 'okha'],
+                    drinks: ['coke', 'fearless', 'origin'],
+                    chinishdish: ['rice', 'porage', 'boli'],
+                    meat: ['beef', 'chicken', 'turkey'],
+                },
+                // price: '3000 naira per plate',
+                // day: ['monday', 'tuesday', 'wednesday']
+            }
+
+            alert(`MY NAME IS ${resturant.name} I LIVE  At ${resturant.location}
+        and i am ${resturant.menu.completion[2]}, in nature,and i am a ${resturant.menu.height[1]} guy, i love 
+        ${resturant.menu.drinks[1]} drinks and ${resturant.menu.meat[2]} and also i love money alot.`)
+
+        }
+    </script>
+
+    <button><a href="quote.html">ass 1</a></button>
+    <button> <a href="histroy.html"> ass 2</a></button>
+    <button> <a href="index.html"></a> ass 3</button>
+    <button> <a href="newass.html"> ass4</a></button>
+    <button><a href="ja ass.html">ass 5</a> </button>
+
+
+</body>
+
+</html>

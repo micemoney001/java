@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert(Boolean(1))
+        alert(Boolean(0))
+        alert(Boolean("hello"))
+        alert(Boolean(""))
+        alert(Boolean(" "))
+        let a = toString(2 + 3)
+        alert(a)
+        let b = 3;
+        let c = 7;
+        b = tostring(b)
+        alert(b + c);
+    </script>
+    <!-- CONDITIONAL OR TERNARY AND COMTROL FLOW -->
+     <script>
+        let age = prompt('your age');
+        let beverage = (age > 21) ? 'beer' : 'water';
+        alert(beverage)
+    </script>
+
+    <input type="text" id="mymy" placeholder="how old are you">
+    <label for="mymy">Age</label>
+    <button onclick=" mayor()">CHECK</button>
+
+    <h1 style="font-weight: bold; font-style: italic; color: blue; " id="sola"></h1>
+    <!-- <script>
+        function mayor() {
+            let age = document.getElementById('mymy').value;
+            let apply = (age >= 25) ? 'you are old enough' : "you are too young";
+
+            document.getElementById('sola').innerHTML = apply + " " + "to apply for this job";
+        }
+    </script> -->
+     
+
+    <script>
+        function mayor() {
+            let age = document.getElementById('mymy').value;
+        if(age>=25){
+            apply='you are old enough';
+            
+        }
+
+        else if(age<18){
+            apply= ' you are not qualify for this job' 
+        }
+
+
+        else if(age>20){
+            apply='you can be manage'
+        }
+        else{
+            apply='you are too young to apply'
+        }
+        document.getElementById('sola').innerHTML = apply + " " + "to apply for this job";
+    }
+
+    </script>
+    <script>
+        let k=new Date().getHours();
+        let p=['GOOD MORNING','GOOD AFTERNOON', 'GOOD EVENING']
+        alert(`${p[k]}`)
+
+    </script>
+    <script>
+
+        let C= prompt('HOW OLD IS NIGERIA')
+        C=Number(C)
+
+
+        switch(C){
+            case 55:
+            alert('you are allmost there');
+            break;
+            case 60:
+                alert('very close')
+                break;
+                case 63:
+                    alert('you are correct')
+                    break;
+                    default:
+                        alert('you are totally wrong')
+
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

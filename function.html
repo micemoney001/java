@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function mayor(age) {
+            if (age >= 18) {
+                return true;
+            }
+            else {
+                return confirm('do your parent permission ?')
+            }
+        }
+
+        let age = prompt('how old are you?')
+        if (mayor(age)) {
+            alert('access granted');
+        }
+        else {
+            alert('access denied');
+        }
+    </script>
+
+    <!-- calculator -->
+
+    <input id="ipt1" placeholder="first no">
+    <span id="mysymbol"></span><br>
+    <input id="ipt2" placeholder="second no">
+    <span id="answer"></span>
+    <br><br>
+    <button onclick=" ass()">*</button>
+
+    
+    <button onclick=" as()">+</button>
+
+    
+    <br><br>
+    <button onclick=" subtract()">-</button>
+
+   
+    <button onclick=" DIVISION()">/</button>
+
+
+    <script>
+        function ass() {
+            let a = document.getElementById('ipt1').value;
+            let b = document.getElementById('ipt2').value;
+            let c = a * b;
+            document.getElementById('mysymbol').innerHTML = "*";
+            document.getElementById('answer').innerHTML = '=' + '' + c;
+        }
+        function as() {
+            let a = +document.getElementById('ipt1').value;
+            let b = +document.getElementById('ipt2').value;
+            let c = a + b;
+            document.getElementById('mysymbol').innerHTML = "+";
+            document.getElementById('answer').innerHTML = '=' + '' + c;
+        }
+
+        function subtract() {
+            let a = document.getElementById('ipt1').value;
+            let b = document.getElementById('ipt2').value;
+            let c = a - b;
+            document.getElementById('mysymbol').innerHTML = "-";
+            document.getElementById('answer').innerHTML = '=' + '' + c;
+        }
+        function DIVISION() {
+            let a = document.getElementById('ipt1').value;
+            let b = document.getElementById('ipt2').value;
+            let c = a / b;
+            document.getElementById('mysymbol').innerHTML = "/";
+            document.getElementById('answer').innerHTML = '=' + '' + c;
+        }
+    </script>
+
+
+    <!-- AGE OF RETIREMENT -->
+    <script>
+            let retirement = (bithyear) => {
+                let n = new Date().getFullYear() - bithyear;
+                return 60 - n;
+            }
+            let m = prompt('WHICH YEAR ARE YOU GIVEN BIRTH TO')
+            alert(`you have ${retirement(m)} years before you will retire from the government work `)
+    </script>
+
+
+
+
+</body>
+
+</html>

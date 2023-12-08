@@ -83,7 +83,7 @@
         function kpk() {
             let maaa = Number(document.querySelector('.inpute').value);
             if (maaa < secretNumber) {
-                pastee.innerHTML = 'THE NUMBER YOU INPUT IS LOW, TRY ANOTHER NUMBER ';
+                pastee.innerHTML = ' YOU INPUT IS WRONG';
                 pastee.style.backgroundColor = 'red';
                 pastee.style.color = 'white'
                 gameover();
@@ -98,6 +98,7 @@
                 pastee.innerHTML = `YOU ARE CORRECT , THE NUMBER IS ${secretNumber} `;
                 pastee.style.backgroundColor = 'green'
                 pastee.style.color = 'white'
+                inpute.style.display='none'
                 if (score > hscore) {
                     hi.innerHTML = `${score}`;
                 }

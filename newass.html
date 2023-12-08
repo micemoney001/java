@@ -51,10 +51,10 @@
         <p style="font-weight: bolder; background-color: white;">GUESS A NUMBER FROM 1 TO 40</p>
         <h4>Input A Number</h4>
         <input type="text" placeholder="guess a number" class="inpute"><br><br>
-        <span id="pastee"></span><br>
-        <h1 id="io"></h1>
+        <p><span id="pastee"></span></p><br>
+        <p id="io"></p>
         <button onclick="kpk()" id="opo">START</button>
-        <h1 >Highest Score: <span id="hi">0</span></h1>
+        <h1>Highest Score: <span id="hi">0</span></h1>
     </div>
 
     <script>
@@ -109,10 +109,10 @@
                 pastee.style.color = 'green'
                 document.getElementById(inpute).value = " ";
                 gameover();
-                
+
 
             }
-            
+
 
         }
 

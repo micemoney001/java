@@ -8,64 +8,24 @@
 </head>
 
 <body>
-    <button onclick="birt()">ABOUT ME</button>
-    <script>
-        let day = new Date().getDay();
-        let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thusday', 'Friday', 'Saturday']
-
-        alert(`TODAY IS ${days[day]} `)
-
-
-
-        function birt() {
-            let resturant = {
-                name: 'OMIDIRE OLUWAMAYOWA',
-                location: 'APETE',
-                menu: {
-                    completion: ['Eba', 'fufu', 'black'],
-                    height: ['egusi', 'tall', 'okha'],
-                    drinks: ['coke', 'fearless', 'origin'],
-                    chinishdish: ['rice', 'porage', 'boli'],
-                    meat: ['beef', 'chicken', 'turkey'],
-                },
-                // price: '3000 naira per plate',
-                // day: ['monday', 'tuesday', 'wednesday']
-            }
-
-            alert(`MY NAME IS ${resturant.name} I LIVE  At ${resturant.location}
-        and i am ${resturant.menu.completion[2]}, in nature,and i am a ${resturant.menu.height[1]} guy, i love 
-        ${resturant.menu.drinks[1]} drinks and ${resturant.menu.meat[2]} and also i love money alot.`)
-
-        }
-    </script>
-
-    <button><a href="quote.html">ass 1</a></button>
-    <button> <a href="histroy.html"> ass 2</a></button>
-    <button> <a href="index.html">ass 3</a> </button>
-    <button> <a href="newass.html"> ass4</a></button>
-    <button><a href="ja ass.html">ass 5</a> </button><br><br>
-
     <div
         style="margin: auto; text-align: center; border-radius: 20px; color: red; padding: 20px; background-color: blue;width: fit-content; ">
         <h1>GUESS A NUMBER GAME</h1>
-        <p style="font-weight: bolder; background-color: white;">GUESS A NUMBER FROM 1 TO 40</p>
+        <p style="font-weight: bolder; background-color: white;">GUESS A NUMBER FROM 1 TO 30</p>
         <h4>Input A Number</h4>
         <input type="text" placeholder="guess a number" class="inpute"><br><br>
         <span id="pastee"></span><br>
         <h1 id="io"></h1>
         <button onclick="kpk()" id="opo">START</button>
-        <h1 >Highest Score: <span id="hi">0</span></h1>
     </div>
 
     <script>
         let secretNumber = Math.trunc(Math.random() * 25) + 10;
         console.log(secretNumber);
-        let maaa = document.querySelector('.inpute')
+        let maaa = document.querySelector('.inpute');
         let pastee = document.querySelector('span');
         let inpute = document.querySelector('.inpute');
-        let HighestScore = document.querySelector('hi');
         let score = 30;
-        let hscore = 0;
 
         function gameover() {
             score = score - 6;
@@ -98,9 +58,6 @@
                 pastee.innerHTML = `YOU ARE CORRECT , THE NUMBER IS ${secretNumber} `;
                 pastee.style.backgroundColor = 'green'
                 pastee.style.color = 'white'
-                if (score > hscore) {
-                    hi.innerHTML = `${score}`;
-                }
 
             }
             else if (maaa > secretNumber) {
@@ -109,15 +66,11 @@
                 pastee.style.color = 'green'
                 document.getElementById(inpute).value = " ";
                 gameover();
-                
 
             }
-            
 
         }
-
     </script>
-
 
 </body>
 

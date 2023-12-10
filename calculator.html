@@ -2,138 +2,204 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 </head>
 
-<body style="background-color: blueviolet;">
+<body>
 
 
-    <!-- NAVBAR -->
+  <!-- NAVBAR -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid" style="background: blue; color: red; padding: 20PX;">
-          <a class="navbar-brand" href="ja ass.html">VAR, LET & CONST</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: red;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="quote.html">QUOTE</a>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="background: blue; color: red; padding: 20PX;">
+      <a class="navbar-brand" href="ja ass.html">VAR, LET & CONST</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: red;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="quote.html">QUOTE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="histroy.html">HISTROY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newass.html">assignment</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CALCULATOR
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="calculator.html">CALCULATOR</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="histroy.html">HISTROY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="newass.html">assignment</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                CALCULATOR
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="calculator.html">CALCULATOR</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-
-
-
-    <!-- calculator -->
-
-    <div style="margin:auto; background-color: red; width: fit-content; padding: 15px;">
-        <h1 style="color: blue; font-weight: bold; font-style: italic; box-shadow: 10px 10px 10px greenyellow; ">SIMPLE
-            CALCULATOR</h1>
-        <div style="margin-left: 60px;">
-            <input id="ipt1" placeholder="first no"
-                style="padding: 15px; border-radius: 10px; border: none; margin-bottom: 8px; ">
-            <span id="mysymbol"></span><br>
-            <input id="ipt2" placeholder="second no" style="padding: 15px; border-radius: 10px; border: none; ">
-            <span id="answer"></span>
-        </div>
-        <br><br>
-        <div style="margin-left: 90px;">
-            <button onclick=" ass()" style="padding: 20px;">*</button>
-
-
-            <button onclick=" as()" style="padding: 20px;">+</button>
-
-
-            <br><br>
-            <button onclick=" subtract()" style="padding: 20px;">-</button>
-
-
-            <button onclick=" DIVISION()" style="padding: 20px;">/</button>
-
-        </div>
-        <script>
-            function ass() {
-                let a = document.getElementById('ipt1').value;
-                let b = document.getElementById('ipt2').value;
-                let c = a * b;
-                document.getElementById('mysymbol').innerHTML = "*";
-                document.getElementById('answer').innerHTML = '=' + '' + c;
-            }
-            function as() {
-                let a = +document.getElementById('ipt1').value;
-                let b = +document.getElementById('ipt2').value;
-                let c = a + b;
-                document.getElementById('mysymbol').innerHTML = "+";
-                document.getElementById('answer').innerHTML = '=' + '' + c;
-            }
-
-            function subtract() {
-                let a = document.getElementById('ipt1').value;
-                let b = document.getElementById('ipt2').value;
-                let c = a - b;
-                document.getElementById('mysymbol').innerHTML = "-";
-                document.getElementById('answer').innerHTML = '=' + '' + c;
-            }
-            function DIVISION() {
-                let a = document.getElementById('ipt1').value;
-                let b = document.getElementById('ipt2').value;
-                let c = a / b;
-                document.getElementById('mysymbol').innerHTML = "/";
-                document.getElementById('answer').innerHTML = '=' + '' + c;
-            }
-        </script>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
+  </nav>
 
-    <!-- AGE OF RETIREMENT -->
+
+
+
+  <!-- calculator -->
+
+  <div style="margin:auto; background-color: red; width: fit-content; padding: 15px;">
+    <h1 style="color: blue; font-weight: bold; font-style: italic; box-shadow: 10px 10px 10px greenyellow; ">SIMPLE
+      CALCULATOR</h1>
+    <div style="margin-left: 60px;">
+      <input id="ipt1" placeholder="first no"
+        style="padding: 15px; border-radius: 10px; border: none; margin-bottom: 8px; ">
+      <span id="mysymbol"></span><br>
+      <input id="ipt2" placeholder="second no" style="padding: 15px; border-radius: 10px; border: none; ">
+      <span id="answer"></span>
+    </div>
+    <br><br>
+    <div style="margin-left: 90px;">
+      <button onclick=" ass()" style="padding: 20px;">*</button>
+
+
+      <button onclick=" as()" style="padding: 20px;">+</button>
+
+
+      <br><br>
+      <button onclick=" subtract()" style="padding: 20px;">-</button>
+
+
+      <button onclick=" DIVISION()" style="padding: 20px;">/</button>
+
+    </div>
     <script>
-        let retirement = (bithyear) => {
-            let n = new Date().getFullYear() - bithyear;
-            return 60 - n;
-        }
-        let m = prompt('INPUT YOUR  BIRTH YEAR')
-        alert(`you have ${retirement(m)} years before you will retire from the government work `)
-    </script>
+      let a, b, c;
+      function input() {
+        a = document.getElementById('ipt1').value;
+        b = document.getElementById('ipt2').value;
+      }
+      function ass() {
+        input();
+        c = a * b;
+        document.getElementById('mysymbol').innerHTML = "*";
+        document.getElementById('answer').innerHTML = '=' + '' + c;
+      }
+      function as() {
+        a = +document.getElementById('ipt1').value;
+        b = +document.getElementById('ipt2').value;
+        c = a + b;
+        document.getElementById('mysymbol').innerHTML = "+";
+        document.getElementById('answer').innerHTML = '=' + '' + c;
+      }
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+      function subtract() {
+        input();
+        c = a - b;
+        document.getElementById('mysymbol').innerHTML = "-";
+        document.getElementById('answer').innerHTML = '=' + '' + c;
+      }
+      function DIVISION() {
+        input();
+        c = a / b;
+        document.getElementById('mysymbol').innerHTML = "/";
+        document.getElementById('answer').innerHTML = '=' + '' + c;
+      }
+    </script>
+  </div>
+
+  <!-- INVESTMENT CALCULATOR -->
+  <div
+    style="background-color: black; border-radius: 20px; width: fit-content; margin: auto; margin-top: 20px;margin-bottom: 30px;color: white; padding: 20px; font-weight: bold;">
+    <h1>INVESTMENT COMPANY</h1><br>
+    <label>Amount you want to invest</label>
+    <input type="text" placeholder="Enter your amount" id="lo"><br><br>
+    <label>How many month did you want to invest with us</label>
+    <select name="" id="loa">
+      <option value="1">1 month</option>
+      <option value="2">2 month</option>
+      <option value="3">3 month</option>
+      <option value="4">4 month</option>
+      <option value="5">5 month</option>
+      <option value="6">6 month</option>
+      <option value="7">7 month</option>
+      <option value="8">8 month</option>
+      <option value="9">9 month</option>
+      <option value="10">10 month</option>
+      <option value="11">11 month</option>
+      <option value="12">12 month</option>
+    </select><br><br>
+
+    <button style="background-color: green;" onclick="loan()">CALCULATE</button><br><br>
+    <h4 style="background-color: yellowgreen; text-align: center;">Since you invested <span id="frfr">&#8358;0</span>,
+      at the rate of 15%, <br> you will receive a
+      interest of <span id="fofo">&#8358;0</span>. Threfore <br> you will receive a total amount of <span
+        id="popo">&#8358;0</span>.</h4>
+
+  </div>
+
+  <script>
+    let lo, loa, sss, rate, intrest, amount, frfr, ikik, fofo, popo;
+
+
+
+
+
+    function loan() {
+      lo = +(document.querySelector('#lo').value);
+      loa = +(document.querySelector('#loa').value);
+      // sss = document.querySelector('#sss');
+      frfr = document.querySelector('#frfr');
+      // ikik = document.querySelector('#ikik');
+      fofo = document.querySelector('#fofo');
+      popo = document.querySelector('#popo')
+      rate = 0.15;
+      intrest = lo * loa * rate;
+      console.log(intrest);
+      amount = intrest + lo;
+      console.log(amount);
+
+
+      frfr.innerHTML = `&#8358;${lo}`;
+      fofo.innerHTML = `&#8358;${intrest}`;
+      popo.innerHTML = `&#8358;${amount}`
+    }
+  </script>
+
+
+
+
+  <!-- AGE OF RETIREMENT -->
+  <script>
+    let retirement = (bithyear) => {
+      let n = new Date().getFullYear() - bithyear;
+      return 60 - n;
+    }
+    let m = prompt('INPUT YOUR  BIRTH YEAR')
+    alert(`you have ${retirement(m)} years before you will retire from the government work `)
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

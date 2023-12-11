@@ -1,21 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <script>
-        for(let i=0; i<=30; i++){
-            console.log(i);
-            // alert('mayor')
-            document.write(`number ${i}:<br>`)
-        }
 
-        let a ='Mayor';
-        alert(a.length)
-        
+<body>
+    <div style="width: fit-content; margin: auto; background-color: hotpink; padding:10px 10px  50px;">
+    <h1>Enter a even number</h1>
+    <input type="text" id="p"><br>
+    <span id="ans"></span><br>
+    <button id="btn">ENTER</button>
+    </div>
+
+    <br><br>
+    <script>
+
+
+        let p, ans,r,btn;
+        btn=document.querySelector('#btn');
+
+        btn.addEventListener('click', ()=>{
+            p = document.querySelector('#p').value;
+            ans = document.querySelector('#ans');
+
+            for (r = 0; r < 2; r++) {
+                if (p % 2 == 1) {
+                    ans.innerHTML = 'You Are Correrct';
+
+                }
+                else if(p%2==0){
+                    ans.innerHTML = 'Invalid Number';
+                    ans.style.backgroundColor='red';
+                    ans.style.color='white';
+                }
+            }
+        })
+
+       
+        // for (let i = 0; i <= 30; i++) {
+        //     console.log(i);
+        //     // alert('mayor')
+        //     document.write(`number ${i}:<br>`)
+        // }
+
+        // let a = 'Mayor';
+        // alert(a.length)
+
+        // let ak = 6;
+        // while (ak) alert(ak--)
+
+
+        // let i = 7;
+        // do {
+        //     alert('welcome')
+        //     i--;
+        // } while (i > 8);
+
+       
+
+        // let dice = Math.trunc(Math.random() * 6) + 1;
+        // while (dice !== 6) {
+        //     console.log(`you rolled a ${dice}`);
+        //     dice = Math.trunc(Math.random() * 6) + 1;
+        //     if (dice == 6) console.log()
+        // }
+
+        // let btn = document.querySelectorAll('button');
+        // console.log(btn);
+
     </script>
+    <!-- <button value=""></button>
+    <button value=""></button>
+    <button value=""></button>
+    <button value=""></button>
+    <button value=""></button> -->
 </body>
+
 </html>

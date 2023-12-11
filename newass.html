@@ -42,89 +42,10 @@
     <button><a href="quote.html">ass 1</a></button>
     <button> <a href="histroy.html"> ass 2</a></button>
     <button> <a href="index.html">ass 3</a> </button>
-    <button> <a href="newass.html"> ass4</a></button>
+    <button> <a href="GUESS NO GAME PUSH.html"> ass4</a></button>
     <button><a href="ja ass.html">ass 5</a> </button><br><br>
 
-    <div id="bt"
-        style="margin: auto; text-align: center; border-radius: 20px; color: red; padding: 20px; background-color: blue;width: fit-content; ">
-        <h1>GUESS A NUMBER GAME</h1>
-        <p style="font-weight: bolder; border-radius: 20px; background-color: white;">
-            <marquee behavior="" direction=""> GUESS A NUMBER FROM 1 TO 40 </marquee>
-        </p>
-        <h4>Input A Number</h4>
-        <input type="text" placeholder="guess a number" class="inpute"><br><br>
-        <p><span id="pastee"></span></p><br>
-        <p id="io" style="color: white; background-color: blue; width: fit-content;padding: 10px;margin: auto;"></p>
-        <button onclick="kpk()" id="opo">PLAY</button>
-        <h1>Highest Score: <span id="hi">0</span></h1>
-    </div>
-
-    <script>
-        let secretNumber = Math.trunc(Math.random() * 25) + 10;
-        console.log(secretNumber);
-        let maaa = document.querySelector('.inpute')
-        let pastee = document.querySelector('span');
-        let inpute = document.querySelector('.inpute');
-        let HighestScore = document.querySelector('hi');
-        let score = 30;
-        let hscore = 0;
-
-        function gameover() {
-            score = score - 6;
-
-            if (score == 0) {
-                pastee.innerHTML = `GAME OVER , THE NUMBER IS ${secretNumber}`;
-                inpute.style.backgroundColor = 'red'
-                inpute.style.display = 'none'
-                opo.style.display = 'none'
-                io.innerHTML = 'Refresh To Start Again'
-                bt.style.backgroundColor = 'red'
-                bt.style.color = 'red'
-
-            }
-        }
-
-        function kpk() {
-            let maaa = Number(document.querySelector('.inpute').value);
-            if (maaa < secretNumber) {
-                pastee.innerHTML = ' YOU INPUT IS WRONG';
-                pastee.style.backgroundColor = 'red';
-                pastee.style.color = 'white'
-                gameover();
-            }
-            else if (maaa < secretNumber) {
-                pastee.innerHTML = 'YOU ARE ALMOST GETTING IT ';
-                pastee.style.backgroundColor = 'yellow'
-                document.getElementById(inpute).value = " ";
-                gameover();
-            }
-            else if (maaa == secretNumber) {
-                pastee.innerHTML = `YOU ARE CORRECT , THE NUMBER IS ${secretNumber} `;
-                pastee.style.backgroundColor = 'green'
-                pastee.style.color = 'white'
-                bt.style.backgroundColor = 'green'
-                bt.color = 'white'
-                if (score > hscore) {
-                    hi.innerHTML = `${score}`;
-                }
-                gameover();
-
-            }
-            else if (maaa > secretNumber) {
-                pastee.innerHTML = 'YOU ARE  WRONG ';
-                pastee.style.backgroundColor = 'red'
-                pastee.style.color = 'green'
-                document.getElementById(inpute).value = " ";
-                gameover();
-
-
-            }
-
-
-        }
-
-    </script>
-
+    
 
 </body>
 

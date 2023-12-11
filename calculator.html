@@ -151,6 +151,15 @@
       interest of <span id="fofo">&#8358;0</span>. Threfore <br> you will receive a total amount of <span
         id="popo">&#8358;0</span>.</h4>
 
+  </div><br><br>
+
+
+  <!-- EVEN NUMBER -->
+  <div style="width: fit-content; margin: auto; background-color: hotpink; padding:10px 10px  50px;">
+    <h1>Enter a even number</h1>
+    <input type="text" id="p"><br>
+    <span id="ans"></span><br>
+    <button id="btn">ENTER</button>
   </div>
 
   <script>
@@ -181,25 +190,47 @@
     }
   </script>
 
+  <!-- EVEN NUMBER -->
 
 
 
-  <!-- AGE OF RETIREMENT -->
+
+  <script>
+
+    let p, ans, r, btn;
+    btn = document.querySelector('#btn');
+
+    btn.addEventListener('click', () => {
+      p = document.querySelector('#p').value;
+      ans = document.querySelector('#ans');
+
+      for (r = 0; r < 2; r++) {
+        if (p % 2 == 1) {
+          ans.innerHTML = 'You Are Correrct';
+        }
+        else if (p % 2 == 0) {
+          ans.innerHTML = 'Invalid Number'; ans.style.backgroundColor = 'red'; ans.style.color = 'white';
+        }
+      }
+    })
+  </script>
+  <!-- AGE OF
+    RETIREMENT -->
   <script>
     let retirement = (bithyear) => {
       let n = new Date().getFullYear() - bithyear;
       return 60 - n;
     }
-    let m = prompt('INPUT YOUR  BIRTH YEAR')
+    let m = prompt('INPUT YOUR BIRTH YEAR')
     alert(`you have ${retirement(m)} years before you will retire from the government work `)
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

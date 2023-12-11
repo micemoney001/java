@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>JAVASCRIPT ASSIGNMENT</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
@@ -19,47 +19,50 @@
 
 <body>
 
- <!-- NAVBAR -->
+  <!-- NAVBAR -->
 
- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid" style="background: blue; color: red; padding: 20PX;">
-    <a class="navbar-brand" href="ja ass.html">VAR, LET & CONST</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: red;">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="quote.html">QUOTE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="histroy.html">HISTROY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="newass.html">assignment</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          CALCULATOR
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="calculator.html">CALCULATOR</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="background: blue; color: red; padding: 20PX;">
+      <a class="navbar-brand" href="ja ass.html">VAR, LET & CONST</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: red;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="quote.html">QUOTE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="histroy.html">HISTROY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="GUESS NO GAME PUSH.html">Guess No Game</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CALCULATOR
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="calculator.html">CALCULATOR</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
 
@@ -141,13 +144,206 @@
         </td>
       </tr>
     </tbody>
-  </table>
+  </table> <br><br><br>
+
+  <!-- QUOTE ASSIGNMENT -->
+
+  <h1>Difference between double,single and bascstick quote.</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">DOUBLE</th>
+        <th scope="col">SINGLE</th>
+        <th scope="col">BACKSTICK</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td style="background-color: red; color: white;"> Standard convention: Using double quotes is a widely <br>
+          accepted
+          convention in JavaScript and many other programming languages,<br> making your code more familiar to
+          other developers.</td>
+        <td style="background-color: yellow; ">Simplicity: Single quotes are simpler and require <br> less effort
+          to type compared to double quotes.</td>
+        <td style="background-color: green; color: white;">Template literals: Backtick quotes allow you to create <br>
+          template
+          literals, which make it easier to include <br> variables and expressions within a string.</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td style="background-color: red; color: white;">HTML compatibility: When working with HTML attributes that
+          require
+          <br> double quotes, like href or src, using double quotes in JavaScript strings <br>can make it
+          easier to integrate your code with HTML.
+        </td>
+        <td style="background-color: yellow;"> Character clarity: Single quotes make it clearer to <br>
+          differentiate between quotes used within a string and <br> the string itself. For example, if you
+          want to include a <br> quote within a string, you can easily use single <br> quotes without the need
+          for escaping.
+        </td>
+        <td style="background-color: green; color: white;">String interpolation: With backtick quotes, <br> you can
+          directly
+          embed variables and expressions <br> within a string using ${}, making <br> string concatenation
+          more concise.</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td style="background-color: red; color: white;">JSON consistency: JSON, which is a popular data interchange
+          format,<br> requires double quotes for key-value pairs, so using double quotes <br> in JavaScript
+          makes it consistent when working with JSON.
+        </td>
+        <td style="background-color: yellow;">Compatibility with HTML: <br> Single quotes are widely used in
+          HTML attribute <br> values, so using them in JavaScript strings can <br> make integration with HTML
+          code smoother.</td>
+        <td style="background-color: green; color: white;"> Multiline strings: Backtick quotes enable <br> you to create
+          multiline strings without the need <br> for escaping line breaks, making the code <br> more
+          readable.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td style="background-color: red; color: white;"> String interpolation: Double quotes allow for easy <br> string
+          interpolation by concatenating variables or <br> expressions within the string using the + operator.
+        </td>
+        <td style="background-color: yellow;">Consistency with other programming languages: <br> Many
+          programming languages, <br> such as Python and Ruby, commonly use single quotes <br> for string
+          literals. By using single quotes in JavaScript, you <br> can maintain a consistent coding style
+          across different <br> languages.
+        </td>
+        <td style="background-color: green; color: white;"> Preserve whitespace: Backtick quotes <br> preserve leading
+          spaces,
+          making it easier <br> to format and align text within <br> the string.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td style="background-color: red; color: white;"> Escaping single quotes: If your string contains single quotes,
+          <br> using double quotes can eliminate the need for escaping them, <br> making the code cleaner and
+          more readable.
+        </td>
+        <td style="background-color: yellow;">Easier string concatenation: When concatenating strings, <br>
+          using single quotes can be more convenient, as you can use double <br> quotes within the string
+          without escaping them.</td>
+        <td style="background-color: green; color: white;"> Embedding special characters: Backtick quotes <br> allow you
+          to
+          easily include special characters, such as <br> newlines (\n) and tabs (\t), within a string.</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td style="background-color: red; color: white;">Widely understood: Double quotes are familiar to developers
+          <br>
+          and easier to understand, especially for beginners who may not be <br> familiar with the differences
+          between single quotes and backticks.</td>
+        <td style="background-color: yellow;"> Familiarity: Single quotes are <br> a popular choice among
+          developers, <br> so using them can make your code more <br> familiar and easier to understand for
+          others.
+        </td>
+        <td style="background-color: green; color: white;">Enhance readability: Backtick quotes <br> can improve the
+          readability
+          of your code by making <br> it clear which parts are static strings and which <br> parts are
+          placeholders or expressions.
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td style="background-color: red; color: white;"> Compatibility with external libraries: Some external libraries
+          <br> or frameworks may assume double quotes for string parameters or <br> configurations. Using
+          double quotes ensures compatibility with such <br> libraries.
+        </td>
+        <td style="background-color: yellow;"> Code readability: Some developers argue <br> that using single
+          quotes offers better code <br> readability and can improve the overall legibility <br> of your code.
+        </td>
+        <td style="background-color: green; color: white;">Clean syntax: Using backtick quotes <br> eliminates the need
+          for
+          manually concatenating <br> strings or using escape characters, resulting in <br> cleaner and more
+          concise code.
+        </td>
+      </tr>
+    </tbody>
+  </table><br><br>
+
+  <!-- HISTROY OF JAVASCRIPT -->
+  <h3>HISTROY OF JAVASCRIPT IN SHORT </h3>
+  <div class="container" style="background-color: black; color: white; text-align: centerz;">
+    <h4>ES1:</h4>
+    <p> Released in June 1997, ES1 was the first standardized version of JavaScript.</p>
+    <p>It introduced foundational features such as variables, functions, conditionals, and loops.</p>
+
+    <h4>ES2 (ECMAScript 2):</h4>
+    <p>- Released in June 1998, ES2 had minor updates and improvements, but no significant new features.</p>
+
+    <h4>ES3 (ECMAScript 3): </h4>
+    <p>- Released in December 1999, ES3 brought substantial improvements to JavaScript.</p>
+    <p>- It introduced features like try/catch for error handling, regular expressions, and support for working with
+      dates and arrays.</p>
+
+    <h4>ES4 (ECMAScript 4): </h4>
+    <p>- ES4 was initially planned to be the next major release, but due to disagreements in the community, it was
+      abandoned. No unique features were introduced in this version.</p>
+
+    <h4>ES5 (ECMAScript 5):</h4>
+    <p>- Released in December 2009, ES5 added several important features.</p>
+    <p>- It introduced strict mode for better error-checking, new array methods like forEach and map, and JSON support.
+    </p>
+
+    <h4>ES6 (ECMAScript 2015):</h4>
+    <p>- Released in June 2015, ES6 was a significant milestone for JavaScript.</p>
+    <p>- It introduced numerous new features like arrow functions, classes, template literals (using backtick quotes),
+      destructuring assignments, and enhanced object literals.</p>
+    <p>- ES6 also introduced modules for better code organization and introduced new iterations and generators for
+      advanced looping and control flow.
+
+      ES6 marked a shift in JavaScript's development, with subsequent yearly releases (ES2016, ES2017, etc.) bringing
+      further enhancements and new features to the language.</p>
+  </div><br><br>
+
+  <!-- DIFFERENT BETWEEN COMPARISON AND LOGICAL -->
+
+  <h1>DIFFERENT BETWEEN COMPARISON AND LOGICAL</h1>
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6" style="background-color: red; color: white; ">
+            <p style="background-color: blue; font-size: 30px; font-weight: bold; color:red ;">COMPARISON </p>
+            (1.) Comparison operators are used to compare two values and evaluate whether they are equal, not equal,
+            greater than, less than, etc.  Examples include "==" for equal to, "!=" for not equal to, ">" for greater
+            than, "<" for less than. <br>
+            (2.) They allow you to easily compare values and determine their relationships. <br>
+           (3.)  They allow you to validate user input by comparing it with expected values. <br>
+           (4.) Comparison operators are crucial in sorting and searching algorithms. <br>
+            (5.) They enable you to perform mathematical operations by comparing values. <br>
+            (6.) Comparison operators are essential in creating loops and iterating over data. <br>
+           (7.) Comparison operators help in making decisions and controlling the flow of a program.
+        </div>
+        <div class="col-md-6" style="background-color: blue; color: white; ">
+            <p style="background-color: red; font-size: 30px;font-weight: bold; color: blue     ;">LOGICAL </p>
+            Logical operators, on the other hand, are used to combine multiple conditions and evaluate them as a
+            whole. Examples include "&&" for logical AND, "||" for logical OR, and "!" for logical NOT. <br>
+            (2.) They help in creating complex decision-making processes by combining multiple criteria. <br>
+            (3.) Logical operators enable you to control the flow of your program based on different conditions. <br>
+            (4.) They provide a concise and efficient way to express compound conditions. <br>
+            (5.)Logical operators are essential in creating loops and iterating over data based on specific conditions. <br>
+            (6.)They help in filtering and organizing data by applying multiple criteria. <br>
+            (7.) Logical operators are widely used in conditional statements like if-else and switch-case.
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"></script>
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

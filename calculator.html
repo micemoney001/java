@@ -60,6 +60,15 @@
 
 
 
+  <!-- EVEN NUMBER -->
+  <div style="width: fit-content; margin: auto; background-color:burlywood; padding:10px 10px  50px; border-radius: 15px; margin-bottom: 20px;">
+    <h1>Enter a even number</h1>
+    <input type="text" id="p"><br>
+    <span id="ans"></span><br>
+    <button id="btn">ENTER</button>
+  </div>
+
+
 
   <!-- calculator -->
 
@@ -154,14 +163,7 @@
   </div><br><br>
 
 
-  <!-- EVEN NUMBER -->
-  <div style="width: fit-content; margin: auto; background-color: hotpink; padding:10px 10px  50px;">
-    <h1>Enter a even number</h1>
-    <input type="text" id="p"><br>
-    <span id="ans"></span><br>
-    <button id="btn">ENTER</button>
-  </div>
-
+  
   <script>
     let lo, loa, sss, rate, intrest, amount, frfr, ikik, fofo, popo;
 
@@ -209,7 +211,9 @@
           ans.innerHTML = 'You Are Correrct';
         }
         else if (p % 2 == 0) {
-          ans.innerHTML = 'Invalid Number'; ans.style.backgroundColor = 'red'; ans.style.color = 'white';
+          ans.innerHTML = 'Invalid Number';
+           ans.style.backgroundColor = 'red';
+            ans.style.color = 'white';
         }
       }
     })

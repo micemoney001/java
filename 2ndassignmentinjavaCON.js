@@ -43,7 +43,7 @@ myform.addEventListener("submit", (e) => {
         tey = false;
     }
     else{
-        myspa1.innerText= 'Lowercase  Required';
+        myspa1.innerText= 'Lowercase Seen';
         myspa1.style.color='green';
 
     }
@@ -55,7 +55,7 @@ myform.addEventListener("submit", (e) => {
         tey = false;
     }
     else{
-        myspa2.innerText= 'Uppercase  Required';
+        myspa2.innerText= 'Uppercase seen';
         myspa2.style.color='green';
 
     }
@@ -67,7 +67,7 @@ myform.addEventListener("submit", (e) => {
         tey = false;
     }
     else{
-        myspa3.innerText= 'Number Required';
+        myspa3.innerText= 'Number seen';
         myspa3.style.color='green';
 
     }
@@ -79,7 +79,7 @@ myform.addEventListener("submit", (e) => {
         tey = false;
     }
     else{
-        myspa4.innerText= 'symbol Required';
+        myspa4.innerText= 'symbol seen';
         myspa4.style.color='green';
         mypas.style.borderBottom='3px solid green';
 

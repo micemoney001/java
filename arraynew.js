@@ -67,3 +67,23 @@ function birt() {
         ${resturant.menu.drinks[1]} drinks and ${resturant.menu.meat[2]} and also i love money alot.`)
 
 }
+
+
+let resturant = {
+    name: 'food mataz',
+    location: 'U.I Ibadan',
+    menu: {
+        swallow: ['Eba', 'fufu', 'pando'],
+        Soup: ['egusi', 'okro', 'okha'],
+        drinks: ['coke', 'fearless', 'origin'],
+        chinishdish: ['rice', 'porage', 'boli'],
+        meat: ['beef', 'chicken', 'turkey'],
+    },
+    price: '3000 naira per plate',
+    day: ['monday', 'tuesday', 'wednesday']
+}
+
+alert(`I WILL ORDER FOOD FROM ${resturant.name} At ${resturant.location}
+ and i buy ${resturant.menu.swallow[2]}, ${resturant.menu.Soup[1]},
+  ${resturant.menu.drinks[1]} and ${resturant.menu.meat[2]} and also the price is
+    ${resturant.price} and i want it on ${resturant.day[1]} `)

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="continue.css">
+    <!--fontawesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<style>
+    body {
+        background-image: url(blue-strip-background-wallpaper-preview.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+    }
+
+    div {
+        border: 2px solid white;
+        background-color: rgba(255, 255, 255, 0.3);
+        /* opacity: 0.5; */
+        font-weight: bolder;
+
+    }
+
+    #emai {
+        background: transparent;
+        border-bottom: 2px solid white;
+        width: 215px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: white;
+    }
+
+    #pas {
+        background: transparent;
+        border-bottom: 2px solid white;
+        border-top: none;
+        width: 215px;
+        border-right: none;
+        border-left: none;
+        color: white;
+    }
+
+    h1 {
+        width: 220px;
+        font-family: sans-serif;
+        text-align: center;
+        color: blue;
+        font-size: 22px;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: cadetblue;  padding: 20PX;">
+            <!-- <a class="navbar-brand" href="ja ass.html">VAR, LET & CONST</a> -->
+            <li class="nav-item dropdown" style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    CALCULATOR
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="newdesign.html">CALCULATOR</a></li>
+                    <li>
+                        <a class="dropdown-item" href="histroy.html">HISTROY</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" aria-current="page" href="quote.html">QUOTE</a>
+                    </li>
+                    <li>
+                        <a style=" font-weight: 900; color: cadetblue;" class="dropdown-item"
+                            href="GUESS NO GAME PUSH.html">Guess No Game</a>
+                    </li>
+                    <li><a class="dropdown-item" href="arraynew.html">USING ALERT</a></li>
+                    <li><a class="dropdown-item" href="CONOFJAVA.html">Form-Validation</a></li>
+                    <li><a class="dropdown-item" href="deffbtwjava&js.html">Diffrence Between java & JavaScript</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: red;">
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> 
+        </div> -->
+    </nav>
+
+
+
+
+    <div
+        style="   color: white; width: fit-content; margin-top: 15px; padding-top: 15px; padding: 55px; margin: auto; border-radius: 10px;">
+        <form action="" id="form">
+
+            <h1>Login</h1><br>
+
+            <label for="">Email:</label><br><br>
+            <input type="text" id="emai" placeholder="omidire@gmail.com"><br><br>
+            <label for="">Password:</label><br><br>
+            <input type="password" id="pas" placeholder="Mayowa001$"> <br><br>
+            <input type="checkbox" required>
+            <label for="">Remeber Me Forget Password</label> <br><br>
+            <input type="submit" style=" border: none; padding: 10px 95px; border-radius: 20px;"><br><br>
+            <label for="">Don't have a Register Account</label> <br><br>
+            <span id="spa5"></span><br><br>
+            <span id="spa1"></span><br>
+            <span id="spa2"></span><br>
+            <span id="spa3"></span><br>
+            <span id="spa4"></span><br>
+
+        </form>
+    </div>
+
+
+    <!-- <div class="fr" id="form">
+        <h2>Login Here</h2>
+        <input id="emai" class="ii" type="email" placeholder="Enter your Email">
+        <input id="pas" class="ii" type="password" placeholder="Input your Password"> <br><br>
+        <input type="submit" style="border: 3px solid;"><br><br>
+
+        <span id="spa1"></span><br><br>
+        <span id="spa2"></span><br><br>
+        <span id="spa3"></span><br><br>
+        <span id="spa4"></span><br><br>
+        <span id="spa5"></span><br><br>
+    </div> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="2ndassignmentinjavaCON.js"></script>
+</body>
+
+</html>

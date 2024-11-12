@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="background-color: black; color: white;">
+
+    <!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="background-color: cadetblue;  padding: 20PX;">
+        <!-- <a class="navbar-brand" href="ja ass.html">VAR, LET & CONST</a> -->
+        <li class="nav-item dropdown" style="list-style-type: none;">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Date-Function
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">CALCULATOR</a></li>
+                <li>
+                    <a class="dropdown-item" href="histroy.html">HISTROY</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" aria-current="page" href="quote.html">QUOTE</a>
+                </li>
+                <li>
+                    <a style=" font-weight: 900; color: cadetblue;" class="dropdown-item"
+                        href="GUESS NO GAME PUSH.html">Guess No Game</a>
+                </li>
+                <li><a class="dropdown-item" href="arraynew.html">USING ALERT</a></li>
+                <li><a class="dropdown-item" href="getdare.html">Date Function</a></li>
+                <li><a class="dropdown-item" href="CONOFJAVA.html">Form-Validation</a></li>
+                <li><a class="dropdown-item" href="deffbtwjava&js.html">Diffrence Between java & JavaScript</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </li>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: red;">
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"></a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> 
+        </div> -->
+</nav>
+
+
+
+    <p id="greet"></p>
+    <button  onclick="megreet()">Greeting</button>
+
+    <div>
+        <pre style=" width: fit-content; margin: auto; border-radius: 20px; background-color: blue; color: white;">
+            <code>
+                function megreet() {
+
+                    let ask = prompt('What your name');
+                    let mygreet = document.getElementById('greet');
+                
+                
+                
+                    let day = new Date().getDay();
+                    let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thusday', 'Friday', 'Saturday']
+                
+                
+                
+                
+                    if (ask != "") {c
+                        if (myDate.getHours() < 12) {
+                            mygreet.innerText = `Good Morning ${ask.toUpperCase()}  ,Today is   ${days[day]} `
+                        }
+                
+                        else if (myDate.getHours() > 12) {
+                            mygreet.innerText = `Good Afternoon ${ask.toUpperCase()}, Today is  ${days[day]}`
+                        }
+                        else if (myDate.getHours() > 16) {
+                            mygreet.innerText = `Good Eveninig ${ask.toUpperCase()} , Today is  ${days[day]}`
+                        }
+                    }
+                
+                    else {
+                        mygreet.innerText = ""
+                    }
+                
+                }
+            </code>
+        </pre>
+    </div>
+
+
+    <script src="getdare.js"></script>
+</body>
+</html>

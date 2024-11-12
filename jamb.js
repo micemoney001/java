@@ -8,7 +8,7 @@ function countdown() {
     mins = Math.floor((myTimeInSec % (60 * 60)) / 60);
     sec = Math.floor(myTimeInSec % 60);
 
-    countdownDisplay.innerText = ` ${hrs} hours , ${mins} Minutes, ${sec} Second`
+    // countdownDisplay.innerText = ` ${hrs} hours , ${mins} Minutes, ${sec} Second`
 
 
     let myho=document.getElementById('ho')

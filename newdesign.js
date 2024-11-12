@@ -78,6 +78,16 @@ function loan() {
     console.log(amount);
 
 
+
+    popo.innerHTML = `Since you invested 
+ &#8358;${lo} <br>
+            at the rate of 15%,  you will receive a <br>
+            interest of  &#8358;${intrest}. <br> Threfore  you will receive a <br> total amount of 
+                &#8358;${amount} `
+
+
+
+
     frfr.innerHTML = `&#8358;${lo}`;
     fofo.innerHTML = `&#8358;${intrest}`;
     popo.innerHTML = `&#8358;${amount}`

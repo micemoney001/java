@@ -42,47 +42,47 @@
 <body>
 
 
-<!-- NAVBAR -->
+    <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid" style="background-color: cadetblue;  padding: 20PX;">
-        <!-- <a class="navbar-brand" href="ja ass.html">VAR, LET & CONST</a> -->
-        <li class="nav-item dropdown" style="list-style-type: none;">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                CALCULATOR
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html">CALCULATOR</a></li>
-                <li>
-                    <a class="dropdown-item" href="histroy.html">HISTROY</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" aria-current="page" href="jamb.html">TIME-START</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" aria-current="page" href="quote.html">QUOTE</a>
-                </li>
-                <li>
-                    <a style=" font-weight: 900; color: cadetblue;" class="dropdown-item"
-                        href="GUESS NO GAME PUSH.html">Guess No Game</a>
-                </li>
-                <li><a class="dropdown-item" href="arraynew.html">USING ALERT</a></li>
-                <li><a class="dropdown-item" href="getdare.html">Date Function</a></li>
-                <li><a class="dropdown-item" href="CONOFJAVA.html">Form-Validation</a></li>
-                <li><a class="dropdown-item" href="deffbtwjava&js.html">Diffrence Between java & JavaScript</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </li>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: cadetblue;  padding: 20PX;">
+            <!-- <a class="navbar-brand" href="ja ass.html">VAR, LET & CONST</a> -->
+            <li class="nav-item dropdown" style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    CALCULATOR
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">CALCULATOR</a></li>
+                    <li>
+                        <a class="dropdown-item" href="histroy.html">HISTROY</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" aria-current="page" href="jamb.html">TIME-START</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" aria-current="page" href="quote.html">QUOTE</a>
+                    </li>
+                    <li>
+                        <a style=" font-weight: 900; color: cadetblue;" class="dropdown-item"
+                            href="GUESS NO GAME PUSH.html">Guess No Game</a>
+                    </li>
+                    <li><a class="dropdown-item" href="arraynew.html">USING ALERT</a></li>
+                    <li><a class="dropdown-item" href="getdare.html">Date Function</a></li>
+                    <li><a class="dropdown-item" href="CONOFJAVA.html">Form-Validation</a></li>
+                    <li><a class="dropdown-item" href="deffbtwjava&js.html">Diffrence Between java & JavaScript</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button> -->
-        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: red;">
                 <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true"></a>
@@ -93,145 +93,146 @@
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form> 
         </div> -->
-</nav>
+    </nav>
 
 
+    <div style="display: flex; ">
+
+        <div
+            style=" text-align: center; background-color: black; width: fit-content; margin: auto; color: white; padding: 20px; border-radius: 10px;">
 
 
-    <div
-        style=" background-color: black; width: fit-content; margin: auto; color: white; padding: 20px; border-radius: 10px;">
+            <div>
+                <span style="color: blue;">C</span>
+                <span style="color: green;">A</span>
+                <span style="color: red;">L</span>
+                <span style="color: yellow;">C</span>
+                <span style="color: steelblue;">U</span>
+                <span style="color: slateblue;">L</span>
+                <span style="color: royalblue;">A</span>
+                <span style="color: springgreen;">T</span>
+                <span style="color: rosybrown;">O</span>
+                <span style="color: plum;">R</span>
+            </div> <br>
+            <input type="text" id="result" disable> <br>
 
+            <div>
+                <button style="background-color: red; color: white; border: none; border-radius: 20px;"
+                    onclick="clearResult()">C</button>
+                <button style="background-color: teal; color: white; border: none; border-radius: 20px;"
+                    onclick="miceresult('7')">7</button>
+                <button onclick="miceresult('8')"
+                    style="background-color: aqua; color: white; border: none; border-radius: 20px;">8</button>
+                <button onclick="miceresult ('9')"
+                    style="background-color: violet; border: none;  border-radius: 20px; color: white;">9</button>
 
-        <div>
-            <span style="color: blue;">C</span>
-            <span style="color: green;">A</span>
-            <span style="color: red;">L</span>
-            <span style="color: yellow;">C</span>
-            <span style="color: steelblue;">U</span>
-            <span style="color: slateblue;">L</span>
-            <span style="color: royalblue;">A</span>
-            <span style="color: springgreen;">T</span>
-            <span style="color: rosybrown;">O</span>
-            <span style="color: plum;">R</span>
-        </div> <br>
-        <input type="text" id="result" disable> <br>
+            </div>
 
-        <div>
-            <button style="background-color: red; color: white; border: none; border-radius: 20px;"
-                onclick="clearResult()">C</button>
-            <button style="background-color: teal; color: white; border: none; border-radius: 20px;"
-                onclick="miceresult('7')">7</button>
-            <button onclick="miceresult('8')"
-                style="background-color: aqua; color: white; border: none; border-radius: 20px;">8</button>
-            <button onclick="miceresult ('9')"
-                style="background-color: violet; border: none;  border-radius: 20px; color: white;">9</button>
+            <div>
+                <button style="color: blue; border: none; border-radius: 20px; background-color: yellow;"
+                    onclick="miceresult('4')">4</button>
+                <button style="background-color: blue; color: white; border: none; border-radius: 20px;"
+                    onclick="miceresult('5')">5</button>
+                <button onclick="miceresult('6')"
+                    style="background-color: lime; color: white; border: none; border-radius: 20px;">6</button>
+                <button style="background-color: violet; color: white; border: none; border-radius: 20px;"
+                    onclick="miceresult('*')">*</button>
+            </div>
+
+            <div>
+                <button style="background-color: coral; border: none; color: white; border-radius: 20px;"
+                    onclick="miceresult('1')">1</button>
+                <button style="background-color: cornflowerblue; color: white; border: none; border-radius: 20px;"
+                    onclick="miceresult('2')">2</button>
+                <button style="background-color: darkgray; color: white; border: none; border-radius: 20px; "
+                    onclick="miceresult('3')">3</button>
+                <button style="background-color: fuchsia; color: white; border: none; border-radius: 20px;"
+                    onclick="miceresult('-')">-</button>
+            </div>
+
+            <div>
+                <button style="background-color: hotpink; color: white; border: none; border-radius: 20px;"
+                    onclick="miceresult('0')">0</button>
+                <button style="background-color:dimgrey; color: white; border: none; border-radius: 20px;"
+                    onclick="miceresult('.')">.</button>
+                <button style="background-color: teal; color: white; border: none; border-radius: 20px;"
+                    onclick="miceresult('+')">+</button>
+
+            </div>
+            <div>
+                <button style="background-color: green; color: white; border: none; border-radius: 20px;"
+                    onclick="miceresult ('/')">/</button>
+                <button style="background-color:navy; color: white; border: none; border-radius: 20px;"
+                    onclick="calculateResult()">=</button>
+            </div>
 
         </div>
 
-        <div>
-            <button style="color: blue; border: none; border-radius: 20px; background-color: yellow;"
-                onclick="miceresult('4')">4</button>
-            <button style="background-color: blue; color: white; border: none; border-radius: 20px;"
-                onclick="miceresult('5')">5</button>
-            <button onclick="miceresult('6')"
-                style="background-color: lime; color: white; border: none; border-radius: 20px;">6</button>
-            <button style="background-color: violet; color: white; border: none; border-radius: 20px;"
-                onclick="miceresult('*')">*</button>
-        </div>
 
-        <div>
-            <button style="background-color: coral; border: none; color: white; border-radius: 20px;"
-                onclick="miceresult('1')">1</button>
-            <button style="background-color: cornflowerblue; color: white; border: none; border-radius: 20px;"
-                onclick="miceresult('2')">2</button>
-            <button style="background-color: darkgray; color: white; border: none; border-radius: 20px; "
-                onclick="miceresult('3')">3</button>
-            <button style="background-color: fuchsia; color: white; border: none; border-radius: 20px;"
-                onclick="miceresult('-')">-</button>
-        </div>
+        <!-- calculator -->
 
-        <div>
-            <button style="background-color: hotpink; color: white; border: none; border-radius: 20px;"
-                onclick="miceresult('0')">0</button>
-            <button style="background-color:dimgrey; color: white; border: none; border-radius: 20px;"
-                onclick="miceresult('.')">.</button>
-            <button style="background-color: teal; color: white; border: none; border-radius: 20px;"
-                onclick="miceresult('+')">+</button>
-
-        </div>
-        <div>
-            <button style="background-color: green; color: white; border: none; border-radius: 20px;"
-                onclick="miceresult ('/')">/</button>
-            <button style="background-color:navy; color: white; border: none; border-radius: 20px;"
-                onclick="calculateResult()">=</button>
-        </div>
-
-    </div>
-    <br><br>
-
-    <!-- calculator -->
-
-    <div style=" border-radius: 10px; margin:auto; background-color: red; width: fit-content; padding: 15px;">
-        <h1 style="color: blue; font-weight: bold; font-style: italic; box-shadow: 10px 10px 10px greenyellow; ">SIMPLE
-            CALCULATOR</h1>
-        <div style="margin-left: 60px;">
-            <input id="ipt1" placeholder="first no"
-                style="padding: 15px; border-radius: 10px; border: none; margin-bottom: 8px; ">
-            <span id="mysymbol"></span><br>
-            <input id="ipt2" placeholder="second no" style="padding: 15px; border-radius: 10px; border: none; ">
-            <span id="answer"></span>
-        </div>
-        <br><br>
-        <div style="margin-left: 90px;">
-            <button onclick=" ass()" style="padding: 20px;">*</button>
-
-
-            <button onclick=" as()" style="padding: 20px;">+</button>
-
-
+        <div style=" border-radius: 10px; margin:auto; background-color: red; width: fit-content; padding: 15px;">
+            <h1 style="color: blue; font-weight: bold; font-style: italic; box-shadow: 10px 10px 10px greenyellow; ">
+                SIMPLE
+                CALCULATOR</h1>
+            <div style="margin-left: 60px;">
+                <input id="ipt1" placeholder="first no"
+                    style="padding: 15px; border-radius: 10px; border: none; margin-bottom: 8px; ">
+                <span id="mysymbol"></span><br>
+                <input id="ipt2" placeholder="second no" style="padding: 15px; border-radius: 10px; border: none; ">
+                <span id="answer"></span>
+            </div>
             <br><br>
-            <button onclick=" subtract()" style="padding: 20px;">-</button>
+            <div style="margin-left: 90px;">
+                <button onclick=" ass()" style="padding: 20px;">*</button>
 
 
-            <button onclick=" DIVISION()" style="padding: 20px;">/</button>
+                <button onclick=" as()" style="padding: 20px;">+</button>
+
+
+                <br><br>
+                <button onclick=" subtract()" style="padding: 20px;">-</button>
+
+
+                <button onclick=" DIVISION()" style="padding: 20px;">/</button>
+
+            </div>
+
 
         </div>
 
 
+        <!-- INVESTMENT CALCULATOR -->
+        <div
+            style="background-color: black; border-radius: 20px; width: fit-content; margin: auto; margin-top: 20px;margin-bottom: 30px;color: white; padding: 20px; font-weight: bold;">
+            <h1>INVESTMENT COMPANY</h1><br>
+            <label>Amount you want to invest</label>
+            <input type="text" placeholder="Enter your amount" id="lo"><br><br>
+            <label>How many month did you want to invest with us</label>
+            <select name="" id="loa">
+                <option value="1" id="loa">1 month</option>
+                <option value="2" id="loa">2 month</option>
+                <option value="3" id="loa">3 month</option>
+                <option value="4" id="loa">4 month</option>
+                <option value="5" id="loa">5 month</option>
+                <option value="6" id="loa">6 month</option>
+                <option value="7" id="loa">7 month</option>
+                <option value="8" id="loa">8 month</option>
+                <option value="9" id="loa">9 month</option>
+                <option value="10" id="loa">10 month</option>
+                <option value="11" id="loa">11 month</option>
+                <option value="12" id="loa">12 month</option>
+            </select><br><br>
+
+            <button style="background-color: green; color: white; padding: 10px 100px;"
+                onclick="loan()">CALCULATE</button><br><br>
+            <h4 id="popo" style="background-color: yellowgreen; text-align: center;"><span id="frfr"></span>
+                <span id="fofo"></span><span id="popo"></span>
+            </h4>
+
+        </div>
+
     </div>
-
-    <br><br><br>
-
-    <!-- INVESTMENT CALCULATOR -->
-    <div
-        style="background-color: black; border-radius: 20px; width: fit-content; margin: auto; margin-top: 20px;margin-bottom: 30px;color: white; padding: 20px; font-weight: bold;">
-        <h1>INVESTMENT COMPANY</h1><br>
-        <label>Amount you want to invest</label>
-        <input type="text" placeholder="Enter your amount" id="lo"><br><br>
-        <label>How many month did you want to invest with us</label>
-        <select name="" id="loa">
-            <option value="1">1 month</option>
-            <option value="2">2 month</option>
-            <option value="3">3 month</option>
-            <option value="4">4 month</option>
-            <option value="5">5 month</option>
-            <option value="6">6 month</option>
-            <option value="7">7 month</option>
-            <option value="8">8 month</option>
-            <option value="9">9 month</option>
-            <option value="10">10 month</option>
-            <option value="11">11 month</option>
-            <option value="12">12 month</option>
-        </select><br><br>
-
-        <button style="background-color: green;" onclick="loan()">CALCULATE</button><br><br>
-        <h4 style="background-color: yellowgreen; text-align: center;">Since you invested <span
-                id="frfr">&#8358;0</span>,
-            at the rate of 15%, <br> you will receive a
-            interest of <span id="fofo">&#8358;0</span>. Threfore <br> you will receive a total amount of <span
-                id="popo">&#8358;0</span>.</h4>
-
-    </div><br><br>
 
 
 

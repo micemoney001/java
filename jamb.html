@@ -7,40 +7,44 @@
     <title>Document</title>
 
     <style>
-         div{
+        div {
             text-align: center;
         }
-        span{
+
+        span {
             font-weight: bolder;
             border-radius: 10px;
             font-size: 200px;
             background-color: red;
-            
-        }
-        button{
-            background-color: yellow;
-             border: none; 
-             color: white;
-             font-size: 70px;
-             border-radius: 10px;
+
         }
 
-        
+        button {
+            background-color: yellow;
+            border: none;
+            color: white;
+            font-size: 70px;
+            border-radius: 10px;
+        }
+
+
 
         @media screen and (max-width:768px) {
-            span{
-            background-color: blue;
-            border-radius: 10px;
-            font-size: 20px;
-            padding: 10px 13px;
+            span {
+                font-weight: bolder;
+                border-radius: 10px;
+                font-size: 20px;
+                background-color: red;
+                padding: 10px 13px;
             }
-            button{
-            background-color: yellow;
-             border: none; 
-             color: white; 
-             font-size: 30px;
-             border-radius: 5px;
-        }
+
+            button {
+                background-color: yellow;
+                border: none;
+                color: white;
+                font-size: 30px;
+                border-radius: 5px;
+            }
 
         }
     </style>
@@ -107,51 +111,54 @@
     <div>
 
         <p id="countdown"></p>
-        <span id="ho" >00</span>
+        <span id="ho">00</span>
         <span style="background-color: white;">:</span>
-        <span id="mo" >00</span>
+        <span id="mo">00</span>
         <span style="background-color: white;">:</span>
-        <span id="so" >00</span><br><br> 
+        <span id="so">00</span><br><br>
         <br>
-        <button onclick="ongod()" id="nono"> START</button>
-        <button onclick="stopp()"  id="stop"  style="visibility: hidden; background-color: red;">STOP</button>
-        <button onclick="ongod()" id="continuee" style="visibility: hidden;">CONTINUE</button>
+        <button onclick="ongod()" id="nono" style=" background-color: red;"> START</button>
+        <button onclick="stopp()" id="stop" style="visibility: hidden; background-color: red;">STOP</button>
+        <button onclick="ongod()" id="continuee" style="visibility: hidden; background-color: red;">CONTINUE</button>
     </div>
 
     <br><br>
 
-    <div style="background-color: black; color: white; width: fit-content;">
+    <div style=" margin: auto; background-color: black; color: white; width: fit-content;">
         <pre><code>
-            let myTimeInSec = 7200
+            <small>
+let myTimeInSec = 7200
 
 
-            let countdownDisplay = document.getElementById('countdown')
-            function countdown() {
-            myTimeInSec -= 1;
-            hrs = Math.floor(myTimeInSec / (60 * 60));
-            mins = Math.floor((myTimeInSec % (60 * 60)) / 60);
-            sec = Math.floor(myTimeInSec % 60);
+let countdownDisplay = document.getElementById('countdown')
+function countdown() {
+myTimeInSec -= 1;
+hrs = Math.floor(myTimeInSec / (60 * 60));
+mins = Math.floor((myTimeInSec % (60 * 60)) / 60);
+sec = Math.floor(myTimeInSec % 60);
 
         
 
 
-            let myho=document.getElementById('ho')
-            let mymo=document.getElementById('mo')
-            let myso=document.getElementById('so')
-            
-            myho.innerText= hrs;
-            mymo.innerText=mins;
-            myso.innerText=sec;
-            
-            }
+let myho=document.getElementById('ho')
+let mymo=document.getElementById('mo')
+let myso=document.getElementById('so')
+
+myho.innerText= hrs;
+mymo.innerText=mins;
+myso.innerText=sec;
+
+}
 
 
-            function ongod() {
-                setInterval(() => {
-                    countdown()
+function ongod() {
+    setInterval(() => {
+        countdown()
 
-                }, 1000);
-            }
+    }, 1000);
+}
+
+            <
         </code></pre>
     </div>
 

@@ -132,11 +132,18 @@
 let myTimeInSec = 7200
 
 
-let countdownDisplay = document.getElementById('countdown')
+let countdownDisplay = 
+document.getElementById('countdown')
+
+
 function countdown() {
 myTimeInSec -= 1;
-hrs = Math.floor(myTimeInSec / (60 * 60));
-mins = Math.floor((myTimeInSec % (60 * 60)) / 60);
+hrs = Math.floor(myTimeInSec / 
+(60 * 60));
+
+mins = Math.floor((myTimeInSec % (60 *
+ 60)) / 60);
+ 
 sec = Math.floor(myTimeInSec % 60);
 
         

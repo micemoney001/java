@@ -33,7 +33,8 @@ function countdown() {
 
 
 function ongod() {
-    nono.style.display ='none';
+    nono.style.visibilityy ='none';
+    nono.style.position='absolute';
     stopdisplay.style.visibility = "visible"
 
     let countdownDisplay = setInterval(() => {

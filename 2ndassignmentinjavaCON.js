@@ -14,12 +14,16 @@ myform.addEventListener("submit", (e) => {
     let myspa4 = document.getElementById('spa4');
     let myspa5 = document.getElementById('spa5');
 
+    
+
     const emaival = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const ppval = /^(?=.*[a-z])/;
     const popoval = /^(?=.*[A-Z])/;
     const paaval = /^(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-])/;
     const nopval = /^(?=.*[0-9])/;
     let tey =true;
+
+   
 
     
 

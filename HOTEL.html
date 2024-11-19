@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body style=" background-color: blue;">
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: cadetblue;  padding: 20PX;">
+            <!-- <a class="navbar-brand" href="ja ass.html">VAR, LET & CONST</a> -->
+            <li class="nav-item dropdown" style="list-style-type: none;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    HOTEL
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">CALCULATOR</a></li>
+                    <li>
+                        <a class="dropdown-item" href="histroy.html">HISTROY</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" aria-current="page" href="quote.html">QUOTE</a>
+                    </li>
+                    <li><a class="dropdown-item" href="uber.html">UBER</a></li>
+                    <li><a class="dropdown-item" href="getdare.html">DATE</a></li>
+                    <li><a class="dropdown-item" href="HOTEL.html">HOTEL</a></li>
+                    <li>
+                        <a class="dropdown-item" aria-current="page" href="jamb.html">TIME-START</a>
+                    </li>
+                    <li>
+                        <a style=" font-weight: 900; color: cadetblue;" class="dropdown-item"
+                            href="GUESS NO GAME PUSH.html">GUESS MY NO</a>
+                    </li>
+                    <li><a class="dropdown-item" href="arraynew.html">USING ALERT</a></li>
+                    <li><a class="dropdown-item" href="CONOFJAVA.html">FORM-VALIDATION</a></li>
+                    <li><a class="dropdown-item" href="deffbtwjava&js.html">DIFFRENCE BETWEEN JAVA & JAVASCRIPT</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">SOMETHING ELSE HERE</a></li>
+                </ul>
+            </li>
+
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color: red;">
+              <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+          </ul>
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> 
+      </div> -->
+    </nav>
+
+
+
+
+
+    <div id="all1"
+        style="margin: auto; background-color: darkblue; color: yellow; width: fit-content; padding: 10px 20px; border-radius: 10px;">
+        <div style="text-align: center;">
+            <h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: 900;">Welcome</h1>
+            <p
+                style=" color: darkblue; margin: auto; border-radius: 20px; padding: 10px 30px; background-color: yellow; width: fit-content;">
+                Provide Your Name</p>
+        </div><br><br>
+
+        <form action="" id="form" style="text-align: center;">
+            <label for="">First Name</label><br>
+            <input type="text" id="firstname" placeholder="FIRST NAME"><br>
+            <span id="spa1"></span><br><br>
+            <label for="">Last Name</label><br>
+            <input type="text" id="lastname" placeholder="LAST NAME"><br>
+            <span id="spa2"></span><br><br>
+
+            <button id="dis1" type="submit" onclick="next()">Next</button>
+
+        </form>
+    </div> <br><br><br>
+
+    <!-- 2nd page -->
+
+    <div id="2ndpage"
+        style=" visibility: hidden;  background-color: darkblue; margin: auto; width: fit-content; padding: 15px 20px; border-radius: 15px; margin: auto; ">
+        <div>
+            <button id="put1"
+                style=" margin: auto; padding: 10px 20px; background-color: yellow; color: darkblue; border: none; border-radius: 10px;"></button>
+        </div>
+
+        <br><br>
+        <div
+            style=" margin: auto; border-radius: 10px; padding: 15px 20px; background-color: yellow; width: fit-content; text-align: center; margin: auto;">
+            <p>Type Of Accomodation</p><br><br>
+            <button onclick="free()">Free Acc</button> <br><br>
+            <button onclick="ntfree()">Hotel Acc</button>
+        </div>
+    </div>
+
+    <!-- 3rd page -->
+    <div id="3rdpage"
+        style=" margin: auto; text-align: center; visibility: hidden; width: fit-content; padding: 15px 25px; background-color: darkblue; color: yellow; font-weight: 900; font-family: Arial, Helvetica, sans-serif;">
+        <p>Thank you for selecting a <br> free accomodation, our <br> staff will get you the <br> available room soon.
+        </p>
+    </div>
+
+
+    <!-- 4th page -->
+    <div id="4thpage"
+        style=" padding: 15px 25px; width: fit-content; border-radius: 10px; background-color: darkblue; color: yellow; text-align: center; margin: auto; visibility: hidden;">
+        <div>
+            <button id="put1"
+                style=" margin: auto; padding: 10px 20px; background-color: yellow; color: darkblue; border: none; border-radius: 10px;"></button>
+        </div>
+        <div>
+            <p style="font-family: Arial, Helvetica, sans-serif;">Choose the day you will be leaving</p>
+            <input type="date" id="eventdate" required>
+
+            <p>Select room type</p>
+            <button onclick="stand()">Standard-#5000</button><br> <br>
+            <button onclick="eme()">Emerald- #15,000</button><br> <br>
+            <button onclick="sup()">Supreme - #25,000</button> <br><br>
+            <button onclick="pre()">Presidential- #40,000</button><br><br>
+
+
+        </div>
+    </div>
+
+    <!-- 5thpage -->
+    <div style="visibility: hidden;">
+        <div id="5thpage"
+            style=" font-size: 20px; padding: 15px 25px; border-radius: 15px; margin: auto; width: fit-content; visibility: hidden; background-color: darkblue; color: yellow;">
+            <p id="standd"></p><br><br>
+            <button>Cancel</button><br><br>
+            <button onclick="last()">Continue</button>
+        </div>
+    </div>
+
+    <!-- 6th page -->
+
+
+    <div id="lastpage"
+        style=" margin: auto; visibility: hidden;  background-color: yellow; font-size: 25px; padding: 10px 20px; font-family: Arial, Helvetica, sans-serif; border-radius: 15px; width: fit-content;">
+
+        <span>Your Rent Expire In:</span><br>
+        <span id="dday">00</span>
+        <span>:</span>
+        <span id="dhrs">00</span>
+        <span>:</span>
+        <span id="dmins">00</span>
+        <span>:</span>
+        <span id="dsec">00</span>
+
+
+
+
+    </div>
+    <br><br><br><br>
+
+
+
+    <script src="hotel.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

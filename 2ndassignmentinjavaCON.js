@@ -94,7 +94,5 @@ myform.addEventListener("submit", (e) => {
 
 
 
-    if (tey){
-        myform.submit()
-    }
+    
 })

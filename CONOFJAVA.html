@@ -27,7 +27,8 @@
         border: 2px solid white;
         background-color: rgba(255, 255, 255, 0.3);
         /* opacity: 0.5; */
-        font-weight: bolder;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     }
 
@@ -134,19 +135,27 @@
 
 
     <div
-        style="color: white; width: 330px; margin-top: 15px; padding-top: 15px; padding: 20px; margin: auto; border-radius: 10px;">
+        style="color: white; width: 330px; margin-top: 15px; padding-top: 15px; padding:15px 20px; margin: auto; border-radius: 10px;">
         <form action="" id="form">
 
-            <h1>Login</h1><br>
+            <div style="text-align: center; border: none; display: flex; justify-content: center; background: transparent;">
+                <h1 style="text-align: center;">Login</h1>
+            </div>
+           
 
             <label for="">Email:</label><br><br>
-            <input type="text" id="emai" placeholder="omidire@gmail.com"><br><br>
+            <input type="text" id="emai" placeholder="omidire@gmail.com" style=" width: 100%;" ><br><br>
             <label for="">Password:</label><br><br>
-            <input type="password" id="pas" placeholder="Mayowa001$"> <br><br>
+            <input type="password" id="pas" placeholder="Mayowa001$" style=" width: 100%;"> <br><br>
             <input type="checkbox" required>
             <label for="">Remeber Me Forget Password</label> <br><br>
-            <input type="submit" style=" border: none; padding: 10px 95px; border-radius: 20px;"><br><br>
-            <label for="">Don't have a Register Account</label> <br><br>
+            <div style="margin: auto; border: none; text-align: center; background: transparent;">
+                <input type="submit" style=" border: none; padding: 10px 95px; border-radius: 20px;"><br><br>
+
+                <label for="" >Don't have a Register Account</label> <br><br>
+            </div>
+           
+           
             <span id="spa5"></span><br>
             <span id="spa1"></span><br>
             <span id="spa2"></span><br>

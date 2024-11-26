@@ -14,15 +14,15 @@
             margin-top: 50px;
         }
 
-        input[type="text"] {
+        #result {
             width: 200px;
             height: 40px;
-            font-size: 20px;
+            font-size: 40px;
             text-align: right;
             margin-bottom: 10px;
         }
 
-        button {
+        #alop {
             width: 40px;
             height: 40px;
             font-size: 20px;
@@ -127,52 +127,52 @@
             <input type="text" id="result" disable> <br>
 
             <div>
-                <button style="background-color: red; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color: red; color: white; border: none; border-radius: 20px;"
                     onclick="clearResult()">C</button>
-                <button style="background-color: teal; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color: teal; color: white; border: none; border-radius: 20px;"
                     onclick="miceresult('7')">7</button>
-                <button onclick="miceresult('8')"
+                <button id="alop" onclick="miceresult('8')"
                     style="background-color: aqua; color: white; border: none; border-radius: 20px;">8</button>
-                <button onclick="miceresult ('9')"
+                <button id="alop" onclick="miceresult ('9')"
                     style="background-color: violet; border: none;  border-radius: 20px; color: white;">9</button>
 
             </div>
 
             <div>
-                <button style="color: blue; border: none; border-radius: 20px; background-color: yellow;"
+                <button  id="alop"style="color: blue; border: none; border-radius: 20px; background-color: yellow;"
                     onclick="miceresult('4')">4</button>
-                <button style="background-color: blue; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color: blue; color: white; border: none; border-radius: 20px;"
                     onclick="miceresult('5')">5</button>
-                <button onclick="miceresult('6')"
+                <button id="alop" onclick="miceresult('6')"
                     style="background-color: lime; color: white; border: none; border-radius: 20px;">6</button>
-                <button style="background-color: violet; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color: violet; color: white; border: none; border-radius: 20px;"
                     onclick="miceresult('*')">*</button>
             </div>
 
             <div>
-                <button style="background-color: coral; border: none; color: white; border-radius: 20px;"
+                <button id="alop" style="background-color: coral; border: none; color: white; border-radius: 20px;"
                     onclick="miceresult('1')">1</button>
-                <button style="background-color: cornflowerblue; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color: cornflowerblue; color: white; border: none; border-radius: 20px;"
                     onclick="miceresult('2')">2</button>
-                <button style="background-color: darkgray; color: white; border: none; border-radius: 20px; "
+                <button id="alop" style="background-color: darkgray; color: white; border: none; border-radius: 20px; "
                     onclick="miceresult('3')">3</button>
-                <button style="background-color: fuchsia; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color: fuchsia; color: white; border: none; border-radius: 20px;"
                     onclick="miceresult('-')">-</button>
             </div>
 
             <div>
-                <button style="background-color: hotpink; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color: hotpink; color: white; border: none; border-radius: 20px;"
                     onclick="miceresult('0')">0</button>
-                <button style="background-color:dimgrey; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color:dimgrey; color: white; border: none; border-radius: 20px;"
                     onclick="miceresult('.')">.</button>
-                <button style="background-color: teal; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color: teal; color: white; border: none; border-radius: 20px;"
                     onclick="miceresult('+')">+</button>
 
             </div>
             <div>
-                <button style="background-color: green; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color: green; color: white; border: none; border-radius: 20px;"
                     onclick="miceresult ('/')">/</button>
-                <button style="background-color:navy; color: white; border: none; border-radius: 20px;"
+                <button id="alop" style="background-color:navy; color: white; border: none; border-radius: 20px;"
                     onclick="calculateResult()">=</button>
             </div>
 
@@ -181,30 +181,30 @@
 
         <!-- calculator -->
 
-        <div style=" border-radius: 10px; margin:auto; background-color: red; width: fit-content; padding: 15px;">
+        <div style=" border-radius: 10px; margin:auto; background-color: orangered; width: fit-content; padding: 15px;">
             <h1 style="color: blue; font-weight: bold; font-style: italic;  ">
                 SIMPLE
                 CALCULATOR</h1> <br><br>
-            <div style="margin-left: 60px;">
+            <div style=" display: flex; justify-content: space-between;">
                 <input id="ipt1" placeholder="first no"
-                    style="padding: 15px; border-radius: 10px; border: none; margin-bottom: 8px; ">
-                <span id="mysymbol"></span><br>
-                <input id="ipt2" placeholder="second no" style="padding: 15px; border-radius: 10px; border: none; ">
-                <span id="answer"></span>
+                    style="padding: 10px; border-radius: 5px; border: none; outline: none; margin-right: 3px;  ">
+                    <span id="mysymbol"></span>
+                
+                <input id="ipt2" placeholder="second no" style=" margin-left: 2px; padding: px; border-radius: 5px; border: none; outline: none; ">
+                
+                
             </div>
+           <br>
+                <span id="answer"></span>
             <br><br>
-            <div style="margin-left: 90px;">
-                <button onclick=" ass()" style="  background-color: blue; color: white; border: none; border-radius: 10px; font-size: 20px;  padding:  25px 15px ;">*</button>
+            <div style="display: flex; justify-content: center;">
+                <button onclick=" ass()" style="  background-color: black; color: blue; border: none; border-radius: 10px; font-size: 20px;  padding:  5px 15px ; margin-left: 9px;">*</button>
 
+                <button onclick=" as()" style="  background-color: black; color: blue; border: none; border-radius: 10px; font-size: 20px;  padding:  5px 15px ; margin-left: 9px;">+</button>
 
-                <button onclick=" as()" style="  background-color: blue; color: white; border: none; border-radius: 10px; font-size: 20px;  padding:  25px 15px ;">+</button>
+                <button onclick=" subtract()" style="  background-color: black; color: blue; border: none; border-radius: 10px; font-size: 20px;  padding:  5px 15px ; margin-left: 9px;">-</button>
 
-
-                <br><br>
-                <button onclick=" subtract()" style="  background-color: blue; color: white; border: none; border-radius: 10px; font-size: 20px;  padding:  25px 15px ;">-</button>
-
-
-                <button onclick=" DIVISION()" style="  background-color: blue; color: white; border: none; border-radius: 10px; font-size: 15px;  padding:  25px 15px ;">/</button>
+                <button onclick=" DIVISION()" style="  background-color: black; color: blue; border: none; border-radius: 10px; font-size: 15px;  padding:  5px 15px ; margin-left: 9px;">/</button>
 
             </div>
 
@@ -214,12 +214,12 @@
 
         <!-- INVESTMENT CALCULATOR -->
         <div
-            style="background-color: black; border-radius: 20px; width: fit-content; margin: auto; margin-top: 20px;margin-bottom: 30px;color: white; padding: 20px; font-weight: bold;">
+            style="background-color: purple; border-radius: 20px; width: fit-content; margin: auto; margin-top: 20px;margin-bottom: 30px;color: white; padding: 9px 20px; font-weight: bold;">
             <h1>INVESTMENT COMPANY</h1><br>
             <label>Amount you want to invest</label>
-            <input type="text" placeholder="Enter your amount" id="lo"><br><br>
+            <input type="text" placeholder="Enter your amount" id="lo" style="padding: 7px 0px;"><br><br>
             <label>How many month did you want to invest with us</label>
-            <select name="" id="loa">
+            <select name="" id="loa" style="padding: 10px 15px; outline: none;">
                 <option value="1" id="loa">1month</option>
                 <option value="2" id="loa">2 month</option>
                 <option value="3" id="loa">3 month</option>
@@ -234,7 +234,7 @@
                 <option value="12" id="loa">12 month</option>
             </select><br><br>
 
-            <button style="background-color: green; color: white; padding: 10px 100px;"
+            <button style="background-color: green; color: white; padding: 10px 25px ; border: none;  "
                 onclick="loan()">CALCULATE</button><br><br>
             <h4 id="popo" style="background-color: yellowgreen; text-align: center;"><span id="frfr"></span>
                 <span id="fofo"></span><span id="popo"></span>

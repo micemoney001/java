@@ -33,7 +33,7 @@ function countdown() {
 
 
 function ongod() {
-    nono.style.visibilityy ='none';
+    nono.style.visibilityy ='hidden';
     nono.style.position='absolute';
     stopdisplay.style.visibility = "visible"
 

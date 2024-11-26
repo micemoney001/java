@@ -9,8 +9,10 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         input {
-            border-radius: 20px;
+            border-radius: 10px;
+            padding: 10px 20px;
             border: none;
+            outline: none;
         }
 
         table{
@@ -95,18 +97,21 @@
         <span id="spa2"></span>
 
 
-        <button id="show1" type="submit"
-            style=" width: 120px; border: none; border-radius: 20px; padding:px px; background: transparent; background-color: rgba(0, 0, 0, 0.466) ; color: white;">
+        <div style="margin: auto; text-align: center;">
+            <button id="show1" type="submit"
+            style="  border: none; border-radius: 10px; padding:10px 35px; background: transparent; background-color: rgba(0, 0, 0, 0.466) ; color: white;">
             Book Ride</button>
+        </div>
+        
     </form>
 </div>
 
 <div style=" color: white; padding: 180px 0px; text-align: center;  visibility: hidden; " id="page">
     <span id="requesting"></span> <br><br><br>
     <button id="re"
-        style=" color: white; visibility: hidden; width: 80px; border: none; border-radius: 20px; padding: 8px 60px; background: transparent; background-color: rgba(0, 0, 0, 0.466) ">cancel</button>
+        style=" text-align: center; color: white; visibility: hidden;  border: none; border-radius: 20px; padding: 8px 60px; background: transparent; background-color: rgba(0, 0, 0, 0.466) ">cancel</button>
     <button onclick="ongodd()" id="ree"
-        style=" color: white; visibility: hidden; width: 80px; border: none; border-radius: 20px; padding: 8px 60px; background: transparent; background-color: rgba(0, 0, 0, 0.466)">
+        style=" margin: auto; color: white; visibility: hidden;  border: none; border-radius: 20px; padding: 8px 60px; background: transparent; background-color: rgba(0, 0, 0, 0.466)">
         Start</button>
 </div>
 
@@ -146,9 +151,9 @@
 
     <div id="pii" style=" color: white;">
         <button onclick="ongod()"
-            style="  width: 80px; border: none; border-radius: 20px; padding: 8px 40px; background: transparent; background-color: rgba(0, 0, 0, 0.466); color: white; margin-right: 30px;">Yes</button>
+            style=" text-align: center;  border: none; border-radius: 20px; padding: 8px 40px; background: transparent; background-color: rgba(0, 0, 0, 0.466); color: white; margin-right: 30px;">Yes</button>
         <button onclick="cal()"
-            style="width: 80px; border: none; border-radius: 20px; padding: 8px 40px; background: transparent; background-color: rgba(0, 0, 0, 0.466); color: white; "
+            style=" text-align: center; border: none; border-radius: 20px; padding: 8px 40px; background: transparent; background-color: rgba(0, 0, 0, 0.466); color: white; "
             >No</button>
     </div>
 </div>

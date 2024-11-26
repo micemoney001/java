@@ -26,14 +26,14 @@ myform.addEventListener("submit", (e) => {
     if (!myfirstname.value.match(nameval)) {
         myspa1.style.color = 'red';
         myspa1.innerText = ' '
-        myfirstname.style.borderBottom = '3px solid red';
+        myfirstname.style.borderBottom = '1px solid red';
         tey = false;
     }
 
     if (!mylastname.value.match(nameval)) {
         myspa2.style.color = 'red'; let myspa1 = document.getElementById('spa1')
         myspa2.innerText = ' '
-        mylastname.style.borderBottom = '3px solid red';
+        mylastname.style.borderBottom = '1px solid red';
         tey = false;
     }
 
@@ -44,16 +44,26 @@ myform.addEventListener("submit", (e) => {
 
 });
 
+let username = ""
+let myput=document.getElementById('put')
 
 function next() {
     myfirstname = (document.getElementById('firstname').value);
     mylastname = (document.getElementById('lastname').value);
+
+    username = `${myfirstname}-${mylastname}`
+
+    myput.innerText= username;
     myput1.innerText = `${myfirstname}-${mylastname}`
+
 
     myall1.style.visibility = 'hidden';
     myall1.style.position = 'absolute';
     my2ndpage.style.visibility = 'visible';
+    
+    console.log(username)
 }
+
 
 function free() {
     my2ndpage.style.visibility = 'hidden';
@@ -64,6 +74,7 @@ function free() {
 }
 
 function ntfree() {
+
     my2ndpage.style.visibility = 'hidden';
     my2ndpage.style.position = 'absolute';
 
@@ -119,7 +130,7 @@ function standdd() {
     let diff = thatDay - today;
 
     if (diff > 0) {
-        let theDays = Math.floor(diff / (24 * 60 * 60 * 1000))
+        theDays = Math.floor(diff / (24 * 60 * 60 * 1000))
         let theHrs = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000))
         let theMins = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000))
         let theSec = Math.floor((diff % (60 * 1000)) / 1000)
@@ -132,12 +143,12 @@ function standdd() {
     }
 
 
-    fhfk = 5000;
-    theDays = Math.floor(diff / (24 * 60 * 60 * 1000));
+    
+
 
 
     console.log()
-    mystandd.innerHTML = ` Your [standard] room at <br> [#5,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${fhfk * theDays}]`
+    
 }
 
 setInterval(() => {
@@ -146,9 +157,12 @@ setInterval(() => {
 
 function stand(){
     standdd()
+    fhfk = 5000;
     my4thpage.style.visibility = 'hidden';
     my4thpage.style.position='absolute';
     my5thpage.style.visibility = 'visible';
+
+    mystandd.innerHTML = ` Your [standard] room at <br> [#5,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${fhfk * theDays}]`
 
     
 }
@@ -181,19 +195,22 @@ function standdd() {
     }
 
 
-    emme = 15000;
+   
     theDays = Math.floor(diff / (24 * 60 * 60 * 1000));
 
 
     console.log()
-    mystandd.innerHTML = ` Your [standard] room at <br> [#15,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${emme * theDays}]`
+   
 }
 
 function eme(){
     standdd()
+    emme = 15000;
     my4thpage.style.visibility = 'hidden';
     my4thpage.style.position='absolute';
     my5thpage.style.visibility = 'visible';
+
+     mystandd.innerHTML = ` Your [standard] room at <br> [#15,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${emme * theDays}]`
 }
 
 
@@ -225,19 +242,22 @@ function standdd() {
     }
 
 
-    supp = 25000;
+   
     theDays = Math.floor(diff / (24 * 60 * 60 * 1000));
 
 
     console.log()
-    mystandd.innerHTML = ` Your [standard] room at <br> [#15,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${supp * theDays}]`
+
 }
 
 function sup(){
     standdd()
+    supp = 25000;
     my4thpage.style.visibility = 'hidden';
     my4thpage.style.position='absolute';
     my5thpage.style.visibility = 'visible';
+
+        mystandd.innerHTML = ` Your [standard] room at <br> [#25,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${supp * theDays}]`
 }
 
 
@@ -269,19 +289,21 @@ function standdd() {
     }
 
 
-    press = 40000;
+    
     theDays = Math.floor(diff / (24 * 60 * 60 * 1000));
 
 
     console.log()
-    mystandd.innerHTML = ` Your [standard] room at <br> [#15,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${press * theDays}]`
+   
 }
 
 function pre(){
     standdd()
+    press = 40000;
     my4thpage.style.visibility = 'hidden';
     my4thpage.style.position='absolute';
     my5thpage.style.visibility = 'visible';
+     mystandd.innerHTML = ` Your [standard] room at <br> [#40,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${press * theDays}]`
 }
 
 

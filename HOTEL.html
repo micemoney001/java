@@ -142,8 +142,10 @@
         </div>
         <div>
             <p style="font-family: Arial, Helvetica, sans-serif;">Choose the day you will be leaving</p>
-            <input type="date" id="eventdate" required style="padding: 10px 15px; border: none; border-radius: 9px;">
+            <input onclick="thiss()" type="date" id="eventdate" required style="padding: 10px 15px; border: none; border-radius: 9px;">
+            <br>
 
+            <div id="ogao" style="visibility: hidden; position: absolute;">
             <p>Select room type</p>
             <button onclick="stand()"
                 style="border: none; padding: 10px 30px; border-radius: 10px;">Standard-#5000</button><br> <br>
@@ -154,6 +156,7 @@
             <button onclick="pre()" style="border: none; padding: 10px 30px; border-radius: 10px;">Presidential-
                 #40,000</button><br><br>
 
+            </div>
 
         </div>
     </div>
@@ -165,7 +168,7 @@
             <p id="standd"></p>
 
             <div style="display: flex; justify-content: space-between; align-items: center;">
-                <button style="border: none; padding: 5px 10px; border-radius: 8px;"> Cancel</button><br><br>
+                <button onclick="cancel()" style="border: none; padding: 5px 10px; border-radius: 8px;"> Cancel</button><br><br>
                 <button onclick="last()" style="border: none; padding: 5px 10px; border-radius: 8px;">Continue</button>
             </div>
 

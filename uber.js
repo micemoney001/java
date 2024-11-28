@@ -1,6 +1,6 @@
 let myfrm = document.getElementById('frm')
-let myfrom = document.getElementById('from')
-let myto = document.getElementById('to');
+let myfrom 
+let myto
 let myrequesting = document.getElementById('requesting');
 let myshow1 = document.getElementById('show1')
 let myre = document.getElementById('re')
@@ -15,26 +15,43 @@ let myform = document.getElementById('FORM')
 
 
 
-const nameval = /^(?=.*[A-Za-z])/;
+let nameval = /^(?=.*[A-Za-z])/;
 
 
 myform.addEventListener("submit", (e) => {
-    e.preventDefault()
+    myfrom = document.getElementById('from')
+    myto = document.getElementById('to');
 
+    e.preventDefault()
     let tey = true;
 
+
     if (!myfrom.value.match(nameval)) {
+        // if (myfrom.value !== "mokola") {
         myspa1.style.color = 'red';
-        myspa1.innerText = ' '
+        myspa1.innerText = 'input your starting  point '
         myfrom.style.borderBottom = '3px solid red';
         tey = false;
     }
+    else {
+        myspa1.style.color = 'green';
+        myfrom.style.borderBottom = '';
+        myspa1.innerText = ''
+
+    }
 
     if (!myto.value.match(nameval)) {
+        // if (myto.value !== "ojoo") {
         myspa2.style.color = 'red'; let myspa1 = document.getElementById('spa1')
-        myspa2.innerText = ' '
+        myspa2.innerText = 'input your destination '
         myto.style.borderBottom = '3px solid red';
         tey = false;
+    }
+    else {
+        myspa2.style.color = 'green';
+        myto.style.borderBottom = '';
+        myspa2.innerText = ''
+
     }
 
     if (tey) {
@@ -44,26 +61,28 @@ myform.addEventListener("submit", (e) => {
 
 })
 
+function cancel() {
+    mypage.style.visibility = 'hidden'
+    mypage.style.position='absolute'
+    frm.style.visibility='visible'
+    frm.style.position='relative'
+    
 
+}
 
 
 
 function ride() {
-    myfrom = (document.getElementById('from').value)
-    myto = (document.getElementById('to').value)
+    myfrom = document.getElementById('from').value
+    myto = document.getElementById('to').value
     myrequesting.innerHTML = ` Your are requesting a <br> ride from ${myfrom.toUpperCase()} to <br> ${myto.toUpperCase()} <br> please confirm your ride.`;
-    myre.style.visibility = 'visible';
-    myree.style.visibility = 'visible';
+    // myre.style.visibility = 'visible';
+    // myree.style.visibility = 'visible';
     mypage.style.visibility = 'visible';
+    mypage.style.position='relative'
 
-    frm.style.display = 'none';
+    frm.style.visibility = 'hidden';
     frm.style.position = 'absolute';
-    show1.style.visibility = "visible"
-
-
-
-
-
 }
 
 
@@ -193,6 +212,7 @@ function cal() {
     mypaused.style.visibility = 'hidden'
     mypi.style.visibility = 'hidden'
     mypii.style.visibility = 'hidden'
+    mysta.style.position='absolute'
 
 
     myoop.style.visibility = 'visible';
@@ -219,9 +239,14 @@ function cal() {
 }
 
 function call() {
+    let mystop =document.getElementById('stop')
+    let mypaus=document.getElementById('paus')
 
-
-    
+    // myall.style.visibility = 'hidden'
+    mysta.style.visibility = 'hidden'
+    mysta.style.position='absolute'
+    mystop.style.visibility='hidden'
+    mypaus.style.visibility='hidden'
 
 
 
@@ -247,9 +272,3 @@ function call() {
     mylass.style.visibility = 'visible';
     mylasst.style.visibility = 'visible';
 }
-
-
-
-mypaused.style.visibility = 'hidden'
-    mypi.style.visibility = 'hidden'
-    mypii.style.visibility = 'hidden'

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         input {
             border-radius: 10px;
@@ -15,11 +16,12 @@
             outline: none;
         }
 
-        table{
+        table {
             border-collapse: collapse;
         }
     </style>
 </head>
+
 <body style="background-color: green;">
 
     <!-- NAVBAR -->
@@ -83,132 +85,131 @@
 
 
     <div style=" margin: auto; width: fit-content; border-radius: 15px; padding: 50px 30px; background-color: lawngreen; color: white;"
-    id="frm">
-    <div>
-        <h2 style="font-size: 30px; font-family: Arial, Helvetica, sans-serif;">Uber</h2>
-        <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; font-weight: 500;">Book a ride now</p>
-    </div>
-    <form action="" id="FORM">
-        <label for="">From:</label> <br>
-        <input type="text" id="from">
-        <span id="spa1"></span><br><br>
-        <label for="">To:</label> <br>
-        <input type="" id="to"><br><br>
-        <span id="spa2"></span>
-
-
-        <div style="margin: auto; text-align: center;">
-            <button id="show1" type="submit"
-            style="  border: none; border-radius: 10px; padding:10px 35px; background: transparent; background-color: rgba(0, 0, 0, 0.466) ; color: white;">
-            Book Ride</button>
+        id="frm">
+        <div>
+            <h2 style="font-size: 30px; font-family: Arial, Helvetica, sans-serif;">Uber</h2>
+            <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; font-weight: 500;">Book a ride now</p>
         </div>
-        
-    </form>
-</div>
-
-<div style=" color: white; padding: 180px 0px; text-align: center;  visibility: hidden; " id="page">
-    <span id="requesting"></span> <br><br><br>
-    <button id="re"
-        style=" text-align: center; color: white; visibility: hidden;  border: none; border-radius: 20px; padding: 8px 60px; background: transparent; background-color: rgba(0, 0, 0, 0.466) ">cancel</button>
-    <button onclick="ongodd()" id="ree"
-        style=" margin: auto; color: white; visibility: hidden;  border: none; border-radius: 20px; padding: 8px 60px; background: transparent; background-color: rgba(0, 0, 0, 0.466)">
-        Start</button>
-</div>
+        <form action="" id="FORM">
+            <label for="">From:</label> <br>
+            <input type="text" id="from"> <br>
+            <span id="spa1"></span><br>
+            <label for="">To:</label> <br>
+            <input type="" id="to"><br>
+            <span id="spa2"></span><br>
 
 
-<div id="sta"
-    style="visibility:hidden ; margin: auto;  text-align: center; color: white; font-family: Arial, Helvetica, sans-serif;">
-    <p id="countdown"></p>
+            <div style="margin: auto; text-align: center;">
+                <button id="show1" type="submit"
+                    style="  border: none; border-radius: 10px; padding:10px 35px; background: transparent; background-color: rgba(0, 0, 0, 0.466) ; color: white;">
+                    Book Ride</button>
+            </div>
 
-    <p id="kk"></p>
-
-    <p id="oo"></p>
-
-    <button id="nono"
-        style=" visibility: hidden; width: 80px; border: none; border-radius: 20px; padding: 8px 60px; background: transparent; background-color: rgba(0, 0, 0, 0.466)">
-        START</button>
-    <div id="all" style="visibility: hidden;">
-        <button id="stop"
-            style=" margin: auto; width: 80px; border: none; border-radius: 20px; padding: 8px 0px; color: white; background: transparent; background-color: rgba(0, 0, 0, 0.466);"
-            onclick="pp()">Pasue</button>
-
-        <!-- <button onclick="cal()"
-            style=" width: 80px; border: none; border-radius: 20px; padding: 8px 0px; background: transparent; background-color: rgba(0, 0, 0, 0.466);  color: white;">Stop
-            Ride</button> -->
-
+        </form>
     </div>
 
-    <!-- <button onclick="ongodd()" id="continuee"
+    <div style=" color: white; padding: 180px 0px; text-align: center;  visibility: hidden; " id="page">
+        <span id="requesting"></span> <br><br><br>
+        <button onclick="cancel()" id="re"
+            style=" text-align: center; color: white;   border: none; border-radius: 20px; padding: 8px 60px; background: transparent; background-color: rgba(0, 0, 0, 0.466) ">cancel</button>
+        <button onclick="ongodd()" id="ree"
+            style=" margin: auto; color: white;  border: none; border-radius: 20px; padding: 8px 60px; background: transparent; background-color: rgba(0, 0, 0, 0.466)">
+            Start</button>
+    </div>
+
+
+    <div id="sta"
+        style="visibility:hidden ; margin: auto;  text-align: center; color: white; font-family: Arial, Helvetica, sans-serif;">
+        <p id="countdown"></p>
+
+        <p id="kk"></p>
+
+        <p id="oo"></p>
+
+        <button id="nono"
+            style=" visibility: hidden; width: 80px; border: none; border-radius: 20px; padding: 8px 60px; background: transparent; background-color: rgba(0, 0, 0, 0.466)">
+            START</button>
+        <div id="all" style="visibility: hidden;">
+            <button id="stop"
+                style=" margin: auto; width: 80px; border: none; border-radius: 20px; padding: 8px 0px; color: white; background: transparent; background-color: rgba(0, 0, 0, 0.466);"
+                onclick="pp()">Pasue</button>
+                <button onclick="call()" id="paus"x
+                style=" width: 80px; border: none; border-radius: 20px; padding: 8px 0px; background: transparent; background-color: rgba(0, 0, 0, 0.466);  color: white;">Stop
+                Ride</button>
+
+        </div>
+
+        <!-- <button onclick="ongodd()" id="continuee"
     style=" background-color: red;">CONTINUE</button> -->
-</div>
-
-<!-- PAUSE -->
-<div id="paused" style=" color: white; visibility: hidden; text-align: center; margin: auto;">
-    <div id="pi" >
-        <p>Paused.</p>
-        <p>Do you wish to continue <br> the ride?</p>
     </div>
 
-    <div id="pii" style=" color: white;">
-        <button onclick="ongod()"
-            style=" text-align: center;  border: none; border-radius: 20px; padding: 8px 40px; background: transparent; background-color: rgba(0, 0, 0, 0.466); color: white; margin-right: 30px;">Yes</button>
-        <button onclick="cal()"
-            style=" text-align: center; border: none; border-radius: 20px; padding: 8px 40px; background: transparent; background-color: rgba(0, 0, 0, 0.466); color: white; "
-            >No</button>
+    <!-- PAUSE -->
+    <div id="paused" style=" color: white; visibility: hidden; text-align: center; margin: auto;">
+        <div id="pi">
+            <p>Paused.</p>
+            <p>Do you wish to continue <br> the ride?</p>
+        </div>
+
+        <div id="pii" style=" color: white;">
+            <button onclick="ongod()"
+                style=" text-align: center;  border: none; border-radius: 20px; padding: 8px 40px; background: transparent; background-color: rgba(0, 0, 0, 0.466); color: white; margin-right: 30px;">Yes</button>
+            <button onclick="cal()"
+                style=" text-align: center; border: none; border-radius: 20px; padding: 8px 40px; background: transparent; background-color: rgba(0, 0, 0, 0.466); color: white; ">No</button>
+        </div>
     </div>
-</div>
 
 
-<div style="visibility:hidden; color: white; text-align: center;" id="oop">
-    <div   id="lass">
-        <h3 style="font-family: Arial, Helvetica, sans-serif;">Ride has Ended</h3>
-        <i class="fa-solid fa-check"></i>
+    <div style="visibility:hidden; color: white; text-align: center;" id="oop">
+        <div id="lass">
+            <h3 style="font-family: Arial, Helvetica, sans-serif;">Ride has Ended</h3>
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div id="lasst">
+            <table border="2" style="  width: 300px; margin: auto; background-color: white; color: black;">
+                <tr>
+                    <td>Base Fare</td>
+                    <td id="basefare"></td>
+                </tr>
+
+                <tr>
+                    <td>Time Fare</td>
+                    <td id="timefare"></td>
+                </tr>
+
+                <tr>
+                    <td>Intial Total</td>
+                    <td id="initial"></td>
+                </tr>
+
+                <tr>
+                    <td>Tax(10%)</td>
+                    <td id="taxx"></td>
+                </tr>
+
+                <tr>
+                    <td>Total Amount</td>
+                    <td id="totall"></td>
+                </tr>
+
+            </table>
+        </div>
     </div>
 
-    <div id="lasst" >
-        <table border="2" style="  width: 300px; margin: auto; background-color: white; color: black;">
-            <tr>
-                <td>Base Fare</td>
-                <td id="basefare"></td>
-            </tr>
-
-            <tr>
-                <td>Time Fare</td>
-                <td id="timefare"></td>
-            </tr>
-
-            <tr>
-                <td>Intial Total</td>
-                <td id="initial"></td>
-            </tr>
-
-            <tr>
-                <td>Tax(10%)</td>
-                <td id="taxx"></td>
-            </tr>
-
-            <tr>
-                <td>Total Amount</td>
-                <td id="totall"></td>
-            </tr>
-
-        </table>
-    </div>
-</div>
-
-    
-   
 
 
-<script src="uber.js"></script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-crossorigin="anonymous"></script>
+    <script src="uber.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

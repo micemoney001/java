@@ -25,16 +25,24 @@ myform.addEventListener("submit", (e) => {
     let tey = true;
     if (!myfirstname.value.match(nameval)) {
         myspa1.style.color = 'red';
-        myspa1.innerText = ' '
+        myspa1.innerText = 'input a valid name '
         myfirstname.style.borderBottom = '1px solid red';
         tey = false;
+    }
+    else{
+        myspa1.innerText=''
+        myfirstname.style.borderBottom = '1px solid green';
     }
 
     if (!mylastname.value.match(nameval)) {
         myspa2.style.color = 'red'; let myspa1 = document.getElementById('spa1')
-        myspa2.innerText = ' '
+        myspa2.innerText = 'input a valid name '
         mylastname.style.borderBottom = '1px solid red';
         tey = false;
+    }
+    else{
+        myspa2.innerText = '';
+        mylastname.style.borderBottom = '1px solid green';
     }
 
     if (tey) {
@@ -115,17 +123,18 @@ function ntfree() {
 //     countdownfunc()
 // }, 1000)
 
-let fhfk, theDays;
+let myogao=document.getElementById('ogao')
+function thiss(){
+    myogao.style.visibility='visible'
+    myogao.style.position='relative'
+}
+
 function standdd() {
-  
 
     let eventdate = getevennt.value
 
     let today = new Date().getTime()
     let thatDay = new Date(eventdate).getTime()
-
-
-
 
     let diff = thatDay - today;
 
@@ -136,174 +145,209 @@ function standdd() {
         let theSec = Math.floor((diff % (60 * 1000)) / 1000)
 
         // console.log(`${theDays}Days: ${theHrs}Hrs: ${theMins}Mins: ${theSec}Secs`)
+
+        
+
+        return theDays
     }
 
     else {
-        // console.log('invalid date')
+              
     }
-
-
-    
-
-
-
-    console.log()
-    
 }
 
-setInterval(() => {
-    standdd()
-}, 1000)
-
+let fhfk, theDays;
 function stand(){
-    standdd()
+
+    setInterval(() => {
+        standdd()
+    }, 1000)
+
+    console.log(standdd())
+
     fhfk = 5000;
+
+    let exactDay = theDays + 1
+
+    console.log(exactDay)
     my4thpage.style.visibility = 'hidden';
     my4thpage.style.position='absolute';
+    myogao.style.visibility='hidden'
+    myogao.style.position='absolute'
     my5thpage.style.visibility = 'visible';
+    my5thpage.style.position='relative'
 
-    mystandd.innerHTML = ` Your [standard] room at <br> [#5,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${fhfk * theDays}]`
+    mystandd.innerHTML= `<p> Your [standard] room at <br> [#5,000] Per nigth.Your <br> bill at the expiration of <br> [${exactDay}Days] will be [${fhfk * exactDay}]</p> `
 
     
 }
 
 let emme;
-function standdd() {
+// function standdd() {
   
 
-    let eventdate = getevennt.value
+//     let eventdate = getevennt.value
 
-    let today = new Date().getTime()
-    let thatDay = new Date(eventdate).getTime()
-
-
+//     let today = new Date().getTime()
+//     let thatDay = new Date(eventdate).getTime()
 
 
-    let diff = thatDay - today;
 
-    if (diff > 0) {
-        let theDays = Math.floor(diff / (24 * 60 * 60 * 1000))
-        let theHrs = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000))
-        let theMins = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000))
-        let theSec = Math.floor((diff % (60 * 1000)) / 1000)
 
-        // console.log(`${theDays}Days: ${theHrs}Hrs: ${theMins}Mins: ${theSec}Secs`)
-    }
+//     let diff = thatDay - today;
 
-    else {
-        // console.log('invalid date')
-    }
+//     if (diff > 0) {
+//         let theDays = Math.floor(diff / (24 * 60 * 60 * 1000))
+//         let theHrs = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000))
+//         let theMins = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000))
+//         let theSec = Math.floor((diff % (60 * 1000)) / 1000)
+
+//         // console.log(`${theDays}Days: ${theHrs}Hrs: ${theMins}Mins: ${theSec}Secs`)
+//     }
+
+//     else {
+//         // console.log('invalid date')
+//     }
 
 
    
-    theDays = Math.floor(diff / (24 * 60 * 60 * 1000));
+//     theDays = Math.floor(diff / (24 * 60 * 60 * 1000));
 
 
-    console.log()
+//     console.log()
    
-}
+// }
 
 function eme(){
-    standdd()
+    // setInterval(() => {
+    //     standdd()
+    // }, 1000)
+    
+    console.log(standdd())
+    let exactDay = theDays + 1
+
+
+    console.log(exactDay)
+
     emme = 15000;
     my4thpage.style.visibility = 'hidden';
     my4thpage.style.position='absolute';
+     myogao.style.visibility='hidden'
+    myogao.style.position='absolute'
     my5thpage.style.visibility = 'visible';
+    my5thpage.style.position='relative'
 
-     mystandd.innerHTML = ` Your [standard] room at <br> [#15,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${emme * theDays}]`
+     mystandd.innerHTML = ` Your [Emerald] room at <br> [#15,000] Per nigth.Your <br> bill at the expiration of <br> [${exactDay}Days] will be [${emme * exactDay}]`
 }
 
 
 let supp;
-function standdd() {
+// function standdd() {
   
 
-    let eventdate = getevennt.value
+//     let eventdate = getevennt.value
 
-    let today = new Date().getTime()
-    let thatDay = new Date(eventdate).getTime()
-
-
+//     let today = new Date().getTime()
+//     let thatDay = new Date(eventdate).getTime()
 
 
-    let diff = thatDay - today;
 
-    if (diff > 0) {
-        let theDays = Math.floor(diff / (24 * 60 * 60 * 1000))
-        let theHrs = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000))
-        let theMins = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000))
-        let theSec = Math.floor((diff % (60 * 1000)) / 1000)
 
-        // console.log(`${theDays}Days: ${theHrs}Hrs: ${theMins}Mins: ${theSec}Secs`)
-    }
+//     let diff = thatDay - today;
 
-    else {
-        // console.log('invalid date')
-    }
+//     if (diff > 0) {
+//         let theDays = Math.floor(diff / (24 * 60 * 60 * 1000))
+//         let theHrs = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000))
+//         let theMins = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000))
+//         let theSec = Math.floor((diff % (60 * 1000)) / 1000)
+
+//         // console.log(`${theDays}Days: ${theHrs}Hrs: ${theMins}Mins: ${theSec}Secs`)
+//     }
+
+//     else {
+//         // console.log('invalid date')
+//     }
 
 
    
-    theDays = Math.floor(diff / (24 * 60 * 60 * 1000));
+//     theDays = Math.floor(diff / (24 * 60 * 60 * 1000));
 
 
-    console.log()
+//     console.log()
 
-}
+// }
 
 function sup(){
-    standdd()
+    setInterval(() => {
+        standdd()
+    }, 1000)
+
+    console.log(standdd())
+    theDays += 1 
     supp = 25000;
     my4thpage.style.visibility = 'hidden';
     my4thpage.style.position='absolute';
+     myogao.style.visibility='hidden'
+    myogao.style.position='absolute'
     my5thpage.style.visibility = 'visible';
+    my5thpage.style.position='relative'
 
-        mystandd.innerHTML = ` Your [standard] room at <br> [#25,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${supp * theDays}]`
+        mystandd.innerHTML = ` Your [Supreme] room at <br> [#25,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${supp * theDays}]`
 }
 
 
 let press;
-function standdd() {
+// function standdd() {
   
 
-    let eventdate = getevennt.value
+//     let eventdate = getevennt.value
 
-    let today = new Date().getTime()
-    let thatDay = new Date(eventdate).getTime()
-
-
+//     let today = new Date().getTime()
+//     let thatDay = new Date(eventdate).getTime()
 
 
-    let diff = thatDay - today;
 
-    if (diff > 0) {
-        let theDays = Math.floor(diff / (24 * 60 * 60 * 1000))
-        let theHrs = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000))
-        let theMins = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000))
-        let theSec = Math.floor((diff % (60 * 1000)) / 1000)
 
-        // console.log(`${theDays}Days: ${theHrs}Hrs: ${theMins}Mins: ${theSec}Secs`)
-    }
+//     let diff = thatDay - today;
 
-    else {
-        // console.log('invalid date')
-    }
+//     if (diff > 0) {
+//         let theDays = Math.floor(diff / (24 * 60 * 60 * 1000))
+//         let theHrs = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000))
+//         let theMins = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000))
+//         let theSec = Math.floor((diff % (60 * 1000)) / 1000)
+
+//         // console.log(`${theDays}Days: ${theHrs}Hrs: ${theMins}Mins: ${theSec}Secs`)
+//     }
+
+//     else {
+//         // console.log('invalid date')
+//     }
 
 
     
-    theDays = Math.floor(diff / (24 * 60 * 60 * 1000));
+//     theDays = Math.floor(diff / (24 * 60 * 60 * 1000));
 
 
-    console.log()
+//     console.log()
    
-}
+// }
 
 function pre(){
-    standdd()
+    setInterval(() => {
+        standdd()
+    }, 1000)
+
+    console.log(standdd())
+    theDays += 1
     press = 40000;
     my4thpage.style.visibility = 'hidden';
     my4thpage.style.position='absolute';
+     myogao.style.visibility='hidden'
+    myogao.style.position='absolute'
     my5thpage.style.visibility = 'visible';
-     mystandd.innerHTML = ` Your [standard] room at <br> [#40,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${press * theDays}]`
+    my5thpage.style.position='relative'
+
+     mystandd.innerHTML = ` Your [Presidential] room at <br> [#40,000] Per nigth.Your <br> bill at the expiration of <br> [${theDays}Days] will be [${press * theDays}]`
 }
 
 
@@ -352,10 +396,22 @@ function countdownfunc() {
 
 }
 
+
+
 function last(){
     my5thpage.style.visibility='hidden';
     my5thpage.style.position='absolute'
     mylastpage.style.visibility='visible'
+}
+
+function cancel(){
+    my5thpage.style.visibility='hidden';
+    my5thpage.style.position='absolute'
+    my4thpage.style.visibility='visible'
+    my4thpage.style.position='relative'
+    mylastpage.style.visibility='hidden'
+
+    console.log('jbjbjbjbjbjb')
 }
 
 // startcount.addEventListener("click" , ()=>{
